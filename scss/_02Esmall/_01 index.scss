@@ -1,33 +1,39 @@
 // 呼叫heml標籤，例如:nav，稱作 類型選擇
 // 呼叫 id，例如<li id="test"><li>，id="test"，[#]ID選擇器；[#test]
 // 呼叫class，class="test1"，[.]類別選擇器；[.test1]
-// scss 1.巢狀寫法 2.變數 $test(設定計算用的基礎值)(一定要寫在最外層且不能與其他變數相同) 3.繼承
+// scss 1.巢狀寫法 2.變數 $test(設定計算用的基礎值)(一定要寫在最外層且不能與其他變數相同) 3.繼承 %test (css3語法相同，但能集中呈現)；呼叫方式 @extend %test
 
 // 傳統css3的寫法 隱藏
 // 集合寫法(寫在同一行，一起隱藏)
-address,.BtnBox,#Icon{
+// address,.BtnBox,#Icon{
+//     display: none;
+// }
+
+// 繼承區(相同樣式)
+.DN{
     display: none;
 }
-// header{
-//     // 寬度100%；我要頁頭百分之百的寬度時，百分之百乘以10倍的意思)
-//     width: $w10*10;
-//     nav{
-//         .BtnBox{
-//             // 隱藏
-//             display: none;
-//             li{
-//                 background-color: burlywood;
-//             }
-//         }
-//         #Icon{
-//             // 隱藏
-//             display: none;
-//         }
-//     }
-// }
-// footer{
-//     address{
-//         // 隱藏
-//         display: none;
-//     }
-// }
+
+header{
+    // 寬度100%；我要頁頭百分之百的寬度時，百分之百乘以10倍的意思)
+    width: $w10*10;
+    nav{
+        .BtnBox{
+            // 呼叫繼承物件
+            @extend .DN;
+            li{
+                background-color: burlywood;
+            }
+        }
+        #Icon{
+            // 呼叫繼承物件
+            @extend .DN;
+        }
+    }
+}
+footer{
+    address{
+        // 呼叫繼承物件
+        @extend .DN;
+    }
+}
