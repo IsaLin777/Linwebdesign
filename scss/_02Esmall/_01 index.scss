@@ -3,7 +3,7 @@
 // 呼叫class，class="test1"，[.]類別選擇器；[.test1]
 // scss 1.巢狀寫法 2.變數 $test(設定計算用的基礎值)(一定要寫在最外層且不能與其他變數相同) 3.繼承
 
-
+// 傳統css3的寫法 隱藏
 header{
     // 寬度100%；我要頁頭百分之百的寬度時，百分之百乘以10倍的意思)
     width: $w10*10;
@@ -19,5 +19,11 @@ header{
             // 隱藏
             display: none;
         }
+    }
+}
+footer{
+    address{
+        // 隱藏
+        display: none;
     }
 }
