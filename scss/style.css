@@ -1,1 +1,11 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+* {
+  margin: 0 auto;
+  padding: 0;
+}
+
+@media screen and (max-width: 576px) {
+  header {
+    background-color: aquamarine;
+  }
+}
+/*# sourceMappingURL=style.css.map */
