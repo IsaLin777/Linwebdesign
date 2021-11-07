@@ -1,22 +1,10 @@
-body {
-  background-color: burlywood;
+* {
+  margin: 0 auto;
+  padding: 0;
 }
 
-header {
-  width: 300px;
-  height: 250px;
-  background-color: coral;
+@media screen and (max-width: 576px) {
+  header {
+    background-color: aquamarine;
+  }
 }
-
-#main {
-  width: 600px;
-  height: 450px;
-  background-color: darkgrey;
-}
-
-footer {
-  width: 100px;
-  height: 350px;
-  background-color: darkblue;
-}
-/*# sourceMappingURL=style.css.map */
