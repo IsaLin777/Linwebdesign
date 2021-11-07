@@ -1,9 +1,34 @@
 // 匯入檔案 @import
-@import'_01 Joint.scss';
+@import'_01Joint.scss';
 
 // RWD 利用 媒體判斷裝置來區分顯示裝置尺寸
 // 超小裝置 <576px max-width>(最小寬度)
 @media screen and (max-width:576px){
     //匯入檔案 @import
-    @import'_02Esmall/_01 index';
+    @import'_02Esmall/_01index';
+}
+
+// 小裝置 >=576px min-width(最大寬度 含等於)
+@media screen and (min-width:576px){
+    @import'_03Small/_01index';
+}
+
+// 平板裝置 >=768px min-width(最大寬度 含等於)
+@media screen and (min-width:768px){
+    @import'_04Medium/_01index';
+}
+
+// 大平板裝置 >=992px Large min-width(最大寬度 含等於)
+@media screen and (min-width:992px){
+    @import'_05Large/_01index';
+}
+
+// 螢幕裝置 >=1200px Xlarge min-width(最大寬度 含等於)
+@media screen and (min-width:1200px){
+    @import'_06Xlarge/_01index';
+}
+
+// 超大螢幕裝置 >=1400px XXlarge min-width(最大寬度 含等於)
+@media screen and (min-width:1400px){
+    @import'_07XXlarge/_01index';
 }

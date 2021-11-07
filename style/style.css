@@ -9,7 +9,7 @@ img {
 }
 
 @media screen and (max-width: 576px) {
-  .DN, header nav .BtnBox, header nav #Icon, footer address {
+  header nav .BtnBox, header nav #Icon, footer address {
     display: none;
   }
   header {
@@ -17,5 +17,11 @@ img {
   }
   header nav .BtnBox li {
     background-color: burlywood;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  header {
+    background-color: cornflowerblue;
   }
 }
