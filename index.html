@@ -26,10 +26,162 @@
     <!-- html4響應式網頁架構id(唯一#) class(類別.) 語意式標籤語-->
     <!-- 頁首header(每頁固定) 主內容main(隨著頁面主題而不同，IE瀏覽器不支援) 頁尾footer(每頁固定) 文章(article，IE支援取代main標籤) -->
     <header>
-        <!-- 導覽列 nav -->
-        <nav></nav>
+         <!-- 導覽列(主按鈕:首頁 商標圖 全系列商品 穿搭日誌 關於品牌 Q&A 聯絡我們，小圖示 FB IG Line 小購物車圖示 會員登入圖示 搜尋列) -->
+         <nav>
+            <!-- 導覽列標籤 nav 項目清單(ul li) 項目(ul) 清單(li)；商標 標題1(h1) -->
+            
+                <h1 id="Logo">ANNADOLLY</h1>
+                <!-- Icon 區塊標籤 div id:icon -->
+                <ul class="BtnBox">
+                    <li class="AllCollection">All Collection 全系列商品
+                        <ul class="Collections">
+                            <li class="NewArrivals">New Arrivals 新品上架</li>
+                            <li class="SeasonalItem">Seasonal Item 季節商品</li>
+                            <li class="MensWear">Men's Wear 男裝系列</li>
+                            <li class="WomensWear">Women's Wear 女裝系列</li>
+                        </ul>
+                    </li>
+                    <li>Journal 穿搭日誌</li>
+                    <li>About 關於品牌</li>
+                    <li>Q&A 常見問題</li>
+                    <li>Contact 聯絡我們</li>
+                </ul>
+                <div id="Icon">
+                    <li class="Member">會員</li>
+                    <li class="ShoppingCart">購物車</li>
+                    <li class="Search">搜尋</li>
+                </div>
+        
+        </nav>
     </header>
-    <article id="main"></article>
-    <footer></footer>
+    <article>
+        <!-- 網頁內容 會隨著頁面內容而更動 首頁廣告輪播區 -->
+        <!-- 廣告區塊 div 命名 輪播功能用 javascrip 命名建議用 ID選擇器； CSS3輪播功能 命名 ID選擇器 或是 類別選擇器(class) -->
+        <!-- 輪播廣告版面 -->
+        <div id="Banner">
+            <div class="LeftBtn">按鈕</div>
+            <ul id="ImgBox">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+            </ul>
+            <div class="RightBtn">按鈕</div>
+        </div>
+        <!-- 輪播廣告下方的單獨區塊 例如: 限量商品 好物分享 新品上架 熱銷排行 -->
+        <article id="NewArrivals">
+            <h1>新品上架</h1>
+            <!-- 區段 section-->
+            <section class="NCommodity">
+                <p class="image">商品圖片</p>
+                <p>
+                    <h3>商品名稱</h3>
+                    <ul>
+                        <li class="MyFavorit">我的最愛</li>
+                        <li class="ShoppingCart">購物車</li>
+                    </ul>
+                </p>
+                <!-- 螢光標記 mark 刪除線 s-->
+                <p class="Brief">商品簡介，文字字數超過26個字(<mark>英文與阿拉伯數字為26個字數，中文為13個字數</mark>)，會利用......設計</p>
+                <ul>
+                    <li class="OriginalPrice">原價<span><s>1,000</s></span></li>
+                    <li Class="SalePrice">特價<span>800</span></li>
+                </ul>
+            </section>
+            <section class="NCommodity">
+                <p class="image">商品圖片</p>
+                <p>
+                    <h3>商品名稱</h3>
+                    <ul>
+                        <li class="MyFavorit">我的最愛</li>
+                        <li class="ShoppingCart">購物車</li>
+                    </ul>
+                </p>
+                <!-- 螢光標記 mark 刪除線 s-->
+                <p class="Brief">商品簡介，文字字數超過26個字(<mark>英文與阿拉伯數字為26個字數，中文為13個字數</mark>)，會利用......設計</p>
+                <ul>
+                    <li class="OriginalPrice">原價<span><s>1,000</s></span></li>
+                    <li Class="SalePrice">特價<span>800</span></li>
+                </ul>
+            </section>
+        </article>
+        <article id="Bestseller">
+            <h1>熱銷排行</h1>
+            <section class="BCommdity">
+                <p class="image">商品圖片</p>
+                <p class=:LName>
+                    <h3>商品名稱</h3>
+                    <ul>
+                        <li class="LineID">聯絡客服</li>
+                    </ul>
+                </p>
+                <!-- 螢光標記 mark 刪除線 s-->
+                <p class="Brief">商品簡介，文字字數超過36個字(<mark>英文與阿拉伯數字為26個字數，中文為118個字數</mark>)，會利用......設計</p>
+                <ul>
+                    <li class="OriginalPrice">原價<span><s>1,000</s></span></li>
+                    <li Class="SalePrice">特價<span>800</span></li>
+                </ul>
+            </section>
+            <section class="BCommdity">
+                <p class="image">商品圖片</p>
+                <p class=:LName>
+                    <h3>商品名稱</h3>
+                    <ul>
+                        <li class="LineID">聯絡客服</li>
+                    </ul>
+                </p>
+                <!-- 螢光標記 mark 刪除線 s-->
+                <p class="Brief">商品簡介，文字字數超過36個字(<mark>英文與阿拉伯數字為26個字數，中文為118個字數</mark>)，會利用......設計</p>
+                <ul>
+                    <li class="OriginalPrice">原價<span><s>1,000</s></span></li>
+                    <li Class="SalePrice">特價<span>800</span></li>
+                </ul>
+            </section>
+        </article>
+        <!-- 以下為商品分類頁面 左側邊欄為分類 右邊欄位為各項商品-->
+        <!-- 側邊欄 aside 商品分類(建議中大型購物車設定 -->
+        <aside>
+            <!-- 項目清單分類 -->
+            <ul id="NewArrivals">
+                <h4>新品上架</h4>
+            </ul>
+            <ul id="AllCollection">
+                <h4>季節商品</h4>
+                <li>春夏系列</li>
+                <li>秋冬系列</li>
+            </ul>
+            <ul id="MensWear">
+                <h4>男裝系列</h4>
+                <li>外套</li>
+                <li>上衣</li>
+                <li>下著</li>
+                <li>配件</li>
+            </ul>
+            <ul id="WomensWear">
+                <h4>女裝系列</h4>
+                <li>外套</li>
+                <li>上衣</li>
+                <li>下著</li>
+                <li>裙裝</li>
+                <li>配件</li>
+            </ul>
+        </aside>
+    </article>
+    <footer>
+        <!-- 擁有者資訊 聯絡資訊 建議瀏覽器解析度 瀏覽人數(比較少用,需要資料庫運作) 版權聲明 連結:隱私權政策 網站安全政策 服務條款 商品的次選單 -->
+        <!-- 段落標籤 p；行內範圍 span(不會另外換行) -->
+        <p>ANNADOLLY版權宣告 &copy;2020-<span id="year">2021</span></p>
+        <p>&copy;<span id="year">2021</span> ANNADOLLY版權宣告</p>
+        <!-- 聯絡資訊 Address 地址、客服電話、E-meil、LineID、FB、Google地圖 -->
+        <address>
+            <p class="Address">台中市台灣大道一段26巷57號</p>
+            <p class="Tel">0800-2345678</p>
+            <p class="E-Mail">yourname@gmail.com</p>
+            <p class="LineID">LineID</p>
+            <p class="FB">臉書帳號</p>
+            <p class="GoogleMap">地圖</p>
+        </address>
+    </footer>
 </body>
 </html>
