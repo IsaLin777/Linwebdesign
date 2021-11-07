@@ -9,19 +9,7 @@ img {
 }
 
 @media screen and (max-width: 576px) {
-  header {
-    width: 100%;
-  }
-  header nav .BtnBox {
-    display: none;
-  }
-  header nav .BtnBox li {
-    background-color: burlywood;
-  }
-  header nav #Icon {
-    display: none;
-  }
-  footer address {
+  address, .BtnBox, #Icon {
     display: none;
   }
 }
