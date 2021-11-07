@@ -10,7 +10,7 @@
 // }
 
 // 繼承區(相同樣式)
-%DN{
+.DN{
     display: none;
 }
 
@@ -20,20 +20,20 @@ header{
     nav{
         .BtnBox{
             // 呼叫繼承物件
-            @extend %DN;
+            @extend .DN;
             li{
                 background-color: burlywood;
             }
         }
         #Icon{
             // 呼叫繼承物件
-            @extend %DN;
+            @extend .DN;
         }
     }
 }
 footer{
     address{
         // 呼叫繼承物件
-        @extend %DN;
+        @extend .DN;
     }
 }

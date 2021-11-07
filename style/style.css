@@ -9,7 +9,7 @@ img {
 }
 
 @media screen and (max-width: 576px) {
-  header nav .BtnBox, header nav #Icon, footer address {
+  .DN, header nav .BtnBox, header nav #Icon, footer address {
     display: none;
   }
   header {
