@@ -1,4 +1,19 @@
+// 呼叫heml標籤，例如:nav，稱作 類型選擇
+// 呼叫 id，例如<li id="test"><li>，id="test"，[#]ID選擇器；[#test]
+// 呼叫class，class="test1"，[.]類別選擇器；[.test1]
+// scss 巢狀寫法
 header{
-    // 背景顏色
-    background-color: aquamarine;
+    nav{
+        .BtnBox{
+            // 隱藏
+            display: none;
+            li{
+                background-color: burlywood;
+            }
+        }
+        #Icon{
+            // 隱藏
+            display: none;
+        }
+    }
 }

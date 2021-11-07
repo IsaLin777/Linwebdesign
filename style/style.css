@@ -3,8 +3,19 @@
   padding: 0;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 @media screen and (max-width: 576px) {
-  header {
-    background-color: aquamarine;
+  header nav .BtnBox {
+    display: none;
+  }
+  header nav .BtnBox li {
+    background-color: burlywood;
+  }
+  header nav #Icon {
+    display: none;
   }
 }
