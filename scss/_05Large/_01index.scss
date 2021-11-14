@@ -4,8 +4,12 @@ header{
     background-color: rgb(106, 185, 42);
     nav{
         .BtnBox{
+            // 開啟隱藏物件
+            @include OB;
         }
         #Icon{
+            // 開啟隱藏物件
+            @include OB;
         }
         // 20211114大平板裝置的icon與BtnBox取消[隱藏顯示]，但無法讀取。因為媒體判斷的順序是由小尺寸語法到大尺寸，故大尺寸沒有下達任何語法時，會直接判讀到小尺寸。
         #MenuBtn{

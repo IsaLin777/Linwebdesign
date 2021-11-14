@@ -6,9 +6,6 @@ header{
         .BtnBox{
             // 呼叫 混合函式
             @include DN;
-            li{
-                background-color: burlywood;
-            }
         }
         #Icon{
             // 呼叫 混合函式

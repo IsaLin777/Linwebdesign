@@ -23,7 +23,14 @@ $w10: 10%;
     // 隱藏
     display: none;
 }
+
 // 撰寫scss的[混合函式mixin]，修正scss的繼承功能，無法被@media使用的問題
 @mixin DN {
     display: none;
+}
+
+// 開啟隱藏物件
+@mixin OB{
+    // 顯示方式:區塊
+    display: block;
 }
