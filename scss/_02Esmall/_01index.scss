@@ -18,8 +18,7 @@ header{
     // 設定高度 單位為%( 因為未給予基準值，所以無法計算出實際高度)
     // height:15%;
     // vh 單位(螢幕可視範圍高度的百分比，計算出實際高度；依照裝置的高度計算；建議10~12之間)
-    height: 10vh;
-
+    // height: 10vh;(用menu圖片撐高框架，故先拿掉header height)
 
     background-color: pink;
     nav{
@@ -30,6 +29,7 @@ header{
         解決方法
         1.nav的父框架header，給予寬度與高度的設定，或是nav給予寬度與高度的設定
         2.清除浮動狀態，由nav設定
+        3.利用圖片高度撐開父框架的高
         */
         /*width: $w10*10;
         background-color: rgb(240, 125, 17);
@@ -41,7 +41,8 @@ header{
         // 靠左排列(與MenuBtn同一行)
         #Logo{
             // 寬度% or vw 單位 (螢幕可視範圍寬度的百分比)
-            width: $w10*8;
+            // width: $w10 * 8 + 5%;
+            @include LBW(8,5%);
             background-color: rgb(212, 160, 247); 
             float:left;
         }
@@ -55,7 +56,7 @@ header{
         }
         // 靠左排列(與Logo同一行)
         #MenuBtn{
-            width:$w10*2;
+            width:$w10 * 1 + 5%;
             // 浮點對齊法:靠左對齊 float:left
             float:left;
         }
