@@ -69,13 +69,7 @@ img {
     width: 100%;
     background-color: #6ab92a;
   }
-  header nav .BtnBox {
-    display: none;
-  }
-  header nav .BtnBox li {
-    background-color: burlywood;
-  }
-  header nav #Icon {
+  header nav #MenuBtn {
     display: none;
   }
   footer address {
