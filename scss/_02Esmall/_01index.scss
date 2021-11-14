@@ -13,7 +13,7 @@
 header{
     // 寬度100%；我要頁頭百分之百的寬度時，百分之百乘以10倍的意思)
     width: $w10*10;
-    height: 80px;
+    // height: 80px;(解決方法一)
     background-color: pink;
     nav{
         /*
@@ -27,8 +27,9 @@ header{
         /*width: $w10*10;
         background-color: rgb(240, 125, 17);
         // 解決方法一:給予高度；二擇一，寫入header或是nav
-        height:65px;
+        height:65px;(解決方法一)
         */
+        // 解決方法二:清除浮動狀態，由nav設定
         
         // 靠左排列(與MenuBtn同一行)
         #Logo{
@@ -46,6 +47,9 @@ header{
         #MenuBtn{
             // 浮點對齊法:靠左對齊 float:left
             float:left;
+        }
+        .clear{
+            @include clearfloat;
         }
     }
 }
