@@ -9,10 +9,16 @@
 //     display: none;
 // }
 
+// 目前使用的單位(數值)式百分比(%)；網頁的固定單位--像素px
 header{
     // 寬度100%；我要頁頭百分之百的寬度時，百分之百乘以10倍的意思)
     width: $w10*10;
+    background-color: pink;
     nav{
+        //  靠左排列(與MenuBtn同一行)
+        #Logo{
+            float:left;
+        }
         .BtnBox{
             // 呼叫 混合函式
             @include DN;
@@ -20,6 +26,11 @@ header{
         #Icon{
             // 呼叫 混合函式
             @include DN;
+        }
+        // 靠左排列(與Logo同一行)
+        #MenuBtn{
+            // 浮點對齊法:靠左對齊 float:left
+            float:left;
         }
     }
 }

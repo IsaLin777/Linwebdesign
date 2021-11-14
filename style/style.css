@@ -11,12 +11,19 @@ img {
 @media screen and (max-width: 576px) {
   header {
     width: 100%;
+    background-color: pink;
+  }
+  header nav #Logo {
+    float: left;
   }
   header nav .BtnBox {
     display: none;
   }
   header nav #Icon {
     display: none;
+  }
+  header nav #MenuBtn {
+    float: left;
   }
   footer address {
     display: none;
@@ -42,7 +49,7 @@ img {
 @media screen and (min-width: 768px) {
   header {
     width: 100%;
-    background-color: #ebee27;
+    background-color: #ffef0d;
   }
   header nav .BtnBox {
     display: none;
@@ -59,6 +66,44 @@ img {
   header {
     width: 100%;
     background-color: #6ab92a;
+  }
+  header nav .BtnBox {
+    display: block;
+  }
+  header nav #Icon {
+    display: block;
+  }
+  header nav #MenuBtn {
+    display: none;
+  }
+  footer address {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  header {
+    width: 100%;
+    background-color: #5b4af0;
+  }
+  header nav .BtnBox {
+    display: block;
+  }
+  header nav #Icon {
+    display: block;
+  }
+  header nav #MenuBtn {
+    display: none;
+  }
+  footer address {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  header {
+    width: 100%;
+    background-color: #9b54eb;
   }
   header nav .BtnBox {
     display: block;
