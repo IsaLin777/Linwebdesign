@@ -1,0 +1,24 @@
+header{
+    // 寬度100%；我要頁頭百分之百的寬度時，百分之百乘以10倍的意思)
+    width: $w10*10;
+    background-color: rgb(235, 238, 39);
+    nav{
+        .BtnBox{
+            // 呼叫 混合函式
+            @include DN;
+            li{
+                background-color: burlywood;
+            }
+        }
+        #Icon{
+            // 呼叫 混合函式
+            @include DN;
+        }
+    }
+}
+footer{
+    address{
+        // 呼叫 混合函式
+        @include DN;
+    }
+}
