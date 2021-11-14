@@ -12,6 +12,7 @@ img {
 @media screen and (max-width: 576px) {
   header {
     width: 100%;
+    height: 10vh;
     background-color: pink;
   }
   header nav {
@@ -26,7 +27,7 @@ img {
     /*width: $w10*10;
         background-color: rgb(240, 125, 17);
         // 解決方法一:給予高度；二擇一，寫入header或是nav
-        height:65px;(解決方法一)
+        height:65px;(解決方法一，最後選用解決方法二，故註記)
         */
   }
   header nav #Logo {
