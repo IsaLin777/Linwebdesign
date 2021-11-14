@@ -17,7 +17,7 @@ header{
 
     // 設定高度 單位為%( 因為未給予基準值，所以無法計算出實際高度)
     // height:15%;
-    // vh 單位(可視裝置的高度，計算出實際高度；依照裝置的高度計算；建議10~12之間)
+    // vh 單位(螢幕可視範圍高度的百分比，計算出實際高度；依照裝置的高度計算；建議10~12之間)
     height: 10vh;
 
 
@@ -40,6 +40,9 @@ header{
         
         // 靠左排列(與MenuBtn同一行)
         #Logo{
+            // 寬度% or vw 單位 (螢幕可視範圍寬度的百分比)
+            width: $w10*8;
+            background-color: rgb(212, 160, 247); 
             float:left;
         }
         .BtnBox{
@@ -52,6 +55,7 @@ header{
         }
         // 靠左排列(與Logo同一行)
         #MenuBtn{
+            width:$w10*2;
             // 浮點對齊法:靠左對齊 float:left
             float:left;
         }
