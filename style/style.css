@@ -153,12 +153,23 @@ img {
   header nav #Icon {
     display: block;
     width: 30vw;
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   header nav .BtnBox {
     display: block;
     width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style-type: none;
   }
-  header nav #MenuBtn {
+  header nav .BtnBox ul {
+    display: none;
+  }
+  header #MenuBtn {
     display: none;
   }
   footer address {
