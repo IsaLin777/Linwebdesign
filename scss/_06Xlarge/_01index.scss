@@ -1,17 +1,7 @@
 header{
     width: $w10*10;
     background-color: rgb(91, 74, 240);
-    nav{
-        .BtnBox{
-            @include OB;
-        }
-        #Icon{
-            @include OB;
-        }
-        #MenuBtn{
-            @include DN;
-        }
-    }
+
 }
 footer{
     address{

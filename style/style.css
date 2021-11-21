@@ -32,6 +32,11 @@ img {
   }
   header nav #Logo {
     width: 85vw;
+  }
+  header nav #MenuBtn {
+    width: 15vw;
+  }
+  header nav #Logo {
     background-color: #d4a0f7;
     float: left;
   }
@@ -42,7 +47,6 @@ img {
     display: none;
   }
   header nav #MenuBtn {
-    width: 15vw;
     float: left;
   }
   header nav .clear {
@@ -76,6 +80,11 @@ img {
   }
   header nav #Logo {
     width: 85vw;
+  }
+  header nav #MenuBtn {
+    width: 15vw;
+  }
+  header nav #Logo {
     background-color: #d4a0f7;
     float: left;
   }
@@ -86,7 +95,6 @@ img {
     display: none;
   }
   header nav #MenuBtn {
-    width: 15vw;
     float: left;
   }
   header nav .clear {
@@ -117,6 +125,12 @@ img {
         // 解決方法一:給予高度；二擇一，寫入header或是nav
         height:65px;(解決方法一，最後選用解決方法二，故註記)
         */
+  }
+  header nav #Logo {
+    width: 85vw;
+  }
+  header nav #MenuBtn {
+    width: 15vw;
   }
   header nav #Logo {
     background-color: #a0e6f7;
@@ -186,15 +200,6 @@ img {
     width: 100vw;
     background-color: #5b4af0;
   }
-  header nav .BtnBox {
-    display: block;
-  }
-  header nav #Icon {
-    display: block;
-  }
-  header nav #MenuBtn {
-    display: none;
-  }
   footer address {
     display: none;
   }
@@ -204,15 +209,6 @@ img {
   header {
     width: 100vw;
     background-color: #9b54eb;
-  }
-  header nav .BtnBox {
-    display: block;
-  }
-  header nav #Icon {
-    display: block;
-  }
-  header nav #MenuBtn {
-    display: none;
   }
   footer address {
     display: none;
