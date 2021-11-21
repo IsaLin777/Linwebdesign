@@ -12,10 +12,10 @@ header{
         // 引入的程式執行結果為 Logo與Icon的寬度，所以要寫在父框架(nav)
         @include LCW(7,0);
 
-        // Logo寬度+Icon寬度=100vw(100%)
-        #Logo{
-            // width:$w10*7;
-        }
+        // Logo寬度+Icon寬度=100vw(100%)，有共用語法後，原本寫在Logo裡的寬度設定就可以刪掉了，因為內容目前沒有語法，所以先把#Logo註記掉。
+        // #Logo{
+            // width:$w10*7;}
+
         #Icon{
             // 開啟隱藏物件
             @include OB;
