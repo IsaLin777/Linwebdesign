@@ -32,8 +32,6 @@ $w10: 10vw;
     // MenuBtn寬度= 父框架的寬度(100)- Logo寬度(85) 
     $MBW: $w10 *10 -$LogoW;
     // width: $w10 * $WM + $WA;
-    // 大尺寸裝置的框架是Logo跟Icon之間的寬度，寫給大尺度專用呼叫的語法
-    $ICW: $w10 *10 -$LogoW;
 
     // 連動 計算寬度Logo與MenuBtn
     // 呼叫 id (標籤或id class)
@@ -45,10 +43,22 @@ $w10: 10vw;
         // 寬度
         width:$MBW;
     }
-    #Icon{
-        // 寬度
-        width:$ICW;
-    }
+}
+@mixin LCW( $WM, $WA){
+        // 計算區 1.設變數(承載值的物件名稱) $WM=倍數 $WA=加的數值
+        $LogoW: $w10 * $WM + $WA;
+        // MenuBtn寬度= 父框架的寬度(100)- Logo寬度(70)
+        // 大尺寸裝置的框架是Logo跟Icon之間的寬度，寫給大尺度專用呼叫的語法
+        $ICW: $w10 *10 -$LogoW;
+
+        #Logo{
+            // 寬度
+            width: $LogoW;
+        }
+        #Icon{
+            // 寬度
+            width:$ICW;
+        }
 }
 // 撰寫scss的 [混合函式mixin]，修正scss的繼承功能，無法被 @media 使用的問題
 @mixin DN {
