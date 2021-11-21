@@ -27,7 +27,22 @@ $w10: 10vw;
 // 計算區
 // 計算header Logo與 MenuBtn之間的寬度 手機寬度
 @mixin LBW( $WM , $WA ) {
-    width: $w10 * $WM + $WA;
+    // 計算區 1.設變數(承載值的物件名稱) $WM=倍數 $WA=加的數值
+    $LogoW: $w10 * $WM + $WA;
+    // MenuBtn寬度= 父框架的寬度(100)- Logo寬度(85) 
+    $MBW: $w10 *10 -$LogoW;
+    // width: $w10 * $WM + $WA;
+
+    // 連動 計算寬度Logo與MenuBtn
+    // 呼叫 id (標籤或id class)
+    #Logo{
+        // 寬度
+        width: $LogoW;
+    }
+    #MenuBtn{
+        // 寬度
+        width:$MBW;
+    }
 }
 // 撰寫scss的 [混合函式mixin]，修正scss的繼承功能，無法被 @media 使用的問題
 @mixin DN {
