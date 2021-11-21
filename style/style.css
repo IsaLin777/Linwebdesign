@@ -11,7 +11,7 @@ img {
 
 @media screen and (max-width: 576px) {
   header {
-    width: 100%;
+    width: 100vw;
     background-color: pink;
   }
   header nav {
@@ -31,7 +31,6 @@ img {
         */
   }
   header nav #Logo {
-    width: 85%;
     background-color: #d4a0f7;
     float: left;
   }
@@ -42,7 +41,6 @@ img {
     display: none;
   }
   header nav #MenuBtn {
-    width: 15%;
     float: left;
   }
   header nav .clear {
@@ -55,14 +53,40 @@ img {
 
 @media screen and (min-width: 576px) {
   header {
-    width: 100%;
-    background-color: cornflowerblue;
+    width: 100vw;
+    background-color: #a0adf8;
+  }
+  header nav {
+    /*
+        浮動對齊的問題 float
+        1.#Logo與#MenuBtn物件的父框架nav，無寬度
+        2.nav的父框架header，高度消失(展開)
+        解決方法
+        1.nav的父框架header，給予寬度與高度的設定，或是nav給予寬度與高度的設定
+        2.清除浮動狀態，由nav設定
+        3.利用圖片高度撐開父框架的高
+        */
+    /*width: $w10*10;
+        background-color: rgb(240, 125, 17);
+        // 解決方法一:給予高度；二擇一，寫入header或是nav
+        height:65px;(解決方法一，最後選用解決方法二，故註記)
+        */
+  }
+  header nav #Logo {
+    background-color: #d4a0f7;
+    float: left;
   }
   header nav .BtnBox {
     display: none;
   }
   header nav #Icon {
     display: none;
+  }
+  header nav #MenuBtn {
+    float: left;
+  }
+  header nav .clear {
+    clear: both;
   }
   footer address {
     display: none;
@@ -71,14 +95,40 @@ img {
 
 @media screen and (min-width: 768px) {
   header {
-    width: 100%;
-    background-color: #ffef0d;
+    width: 100vw;
+    background-color: #d08aff;
+  }
+  header nav {
+    /*
+        浮動對齊的問題 float
+        1.#Logo與#MenuBtn物件的父框架nav，無寬度
+        2.nav的父框架header，高度消失(展開)
+        解決方法
+        1.nav的父框架header，給予寬度與高度的設定，或是nav給予寬度與高度的設定
+        2.清除浮動狀態，由nav設定
+        3.利用圖片高度撐開父框架的高
+        */
+    /*width: $w10*10;
+        background-color: rgb(240, 125, 17);
+        // 解決方法一:給予高度；二擇一，寫入header或是nav
+        height:65px;(解決方法一，最後選用解決方法二，故註記)
+        */
+  }
+  header nav #Logo {
+    background-color: #a0e6f7;
+    float: left;
   }
   header nav .BtnBox {
     display: none;
   }
   header nav #Icon {
     display: none;
+  }
+  header nav #MenuBtn {
+    float: left;
+  }
+  header nav .clear {
+    clear: both;
   }
   footer address {
     display: none;
@@ -87,14 +137,26 @@ img {
 
 @media screen and (min-width: 992px) {
   header {
-    width: 100%;
-    background-color: #6ab92a;
+    width: 100vw;
+    background-color: #4bf5ca;
   }
-  header nav .BtnBox {
-    display: block;
+  header nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  header nav #Logo {
+    width: 70vw;
   }
   header nav #Icon {
     display: block;
+    width: 30vw;
+  }
+  header nav .BtnBox {
+    display: block;
+    width: 100vw;
   }
   header nav #MenuBtn {
     display: none;
@@ -106,7 +168,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   header {
-    width: 100%;
+    width: 100vw;
     background-color: #5b4af0;
   }
   header nav .BtnBox {
@@ -125,7 +187,7 @@ img {
 
 @media screen and (min-width: 1400px) {
   header {
-    width: 100%;
+    width: 100vw;
     background-color: #9b54eb;
   }
   header nav .BtnBox {

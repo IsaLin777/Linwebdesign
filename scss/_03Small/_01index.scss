@@ -1,8 +1,51 @@
+// 呼叫heml標籤，例如:nav，稱作 類型選擇
+// 呼叫 id，例如<li id="test"><li>，id="test"，[#]ID選擇器；[#test]
+// 呼叫class，class="test1"，[.]類別選擇器；[.test1]
+// scss 1.巢狀寫法 2.變數 $test(設定計算用的基礎值)(一定要寫在最外層且不能與其他變數相同) 3.繼承 %test (css3語法相同，但能集中呈現)；呼叫方式 @extend %test
+
+// 傳統css3的寫法 隱藏
+// 集合寫法(寫在同一行，一起隱藏)
+// address,.BtnBox,#Icon{
+//     display: none;
+// }
+
+// 目前使用的單位(數值)式百分比(%)；網頁的固定單位--像素px
 header{
     // 寬度100%；我要頁頭百分之百的寬度時，百分之百乘以10倍的意思)
     width: $w10*10;
-    background-color: cornflowerblue;
+    // height: 80px;(解決方法一，最後選用解決方法二，故註記)
+
+    // 設定高度 單位為%( 因為未給予基準值，所以無法計算出實際高度)
+    // height:15%;
+    // vh 單位(螢幕可視範圍高度的百分比，計算出實際高度；依照裝置的高度計算；建議10~12之間)
+    // height: 10vh;(用menu圖片撐高框架，故先拿掉header height)
+
+    background-color: rgb(160, 173, 248);
     nav{
+        /*
+        浮動對齊的問題 float
+        1.#Logo與#MenuBtn物件的父框架nav，無寬度
+        2.nav的父框架header，高度消失(展開)
+        解決方法
+        1.nav的父框架header，給予寬度與高度的設定，或是nav給予寬度與高度的設定
+        2.清除浮動狀態，由nav設定
+        3.利用圖片高度撐開父框架的高
+        */
+        /*width: $w10*10;
+        background-color: rgb(240, 125, 17);
+        // 解決方法一:給予高度；二擇一，寫入header或是nav
+        height:65px;(解決方法一，最後選用解決方法二，故註記)
+        */
+        // 解決方法二:清除浮動狀態，由nav設定
+        
+        // 靠左排列(與MenuBtn同一行)
+        #Logo{
+            // 寬度% or vw 單位 (螢幕可視範圍寬度的百分比)
+            // width: $w10 * 8 + 5%;
+            // @include LBW(8,5%);
+            background-color: rgb(212, 160, 247); 
+            float:left;
+        }
         .BtnBox{
             // 呼叫 混合函式
             @include DN;
@@ -10,6 +53,15 @@ header{
         #Icon{
             // 呼叫 混合函式
             @include DN;
+        }
+        // 靠左排列(與Logo同一行)
+        #MenuBtn{
+            // width:$w10 * 1 + 5%;
+            // 浮點對齊法:靠左對齊 float:left
+            float:left;
+        }
+        .clear{
+            @include clearfloat;
         }
     }
 }

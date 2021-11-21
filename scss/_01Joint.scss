@@ -12,7 +12,7 @@ img{
     height:auto;
 }
 
-$w10: 10%;
+$w10: 10vw;
 
 // 繼承區(相同樣式)；將scss的繼承功能寫在共用檔內，因為位置編排有誤，故造成 編譯 錯誤
 // You may not @extend an outer selector from within @media.
@@ -25,7 +25,7 @@ $w10: 10%;
 }
 
 // 計算區
-// 計算header Logo與 BtnBox之間的寬度
+// 計算header Logo與 MenuBtn之間的寬度 手機寬度
 @mixin LBW( $WM , $WA ) {
     width: $w10 * $WM + $WA;
 }

@@ -1,15 +1,27 @@
 header{
     // 寬度100%；我要頁頭百分之百的寬度時，百分之百乘以10倍的意思)
     width: $w10*10;
-    background-color: rgb(106, 185, 42);
+    background-color: rgb(75, 245, 202);
     nav{
-        .BtnBox{
-            // 開啟隱藏物件
-            @include OB;
+        // 彈性佈局 flex；對齊物件的父框架
+        // 顯示方式:彈性佈局
+        display: flex;
+        // 換行
+        flex-wrap: wrap;
+
+        // Logo寬度+Icon寬度=100vw(100%)
+        #Logo{
+            width:$w10*7;
         }
         #Icon{
             // 開啟隱藏物件
             @include OB;
+            width:$w10*3;
+        }
+        .BtnBox{
+            // 開啟隱藏物件
+            @include OB;
+            width: $w10*10
         }
         // 20211114大平板裝置的icon與BtnBox取消[隱藏顯示]，但無法讀取。因為媒體判斷的順序是由小尺寸語法到大尺寸，故大尺寸沒有下達任何語法時，會直接判讀到小尺寸。
         #MenuBtn{
