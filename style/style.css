@@ -31,6 +31,7 @@ img {
         */
   }
   header nav #Logo {
+    width: 85vw;
     background-color: #d4a0f7;
     float: left;
   }
@@ -41,6 +42,7 @@ img {
     display: none;
   }
   header nav #MenuBtn {
+    width: 15vw;
     float: left;
   }
   header nav .clear {
@@ -73,6 +75,7 @@ img {
         */
   }
   header nav #Logo {
+    width: 85vw;
     background-color: #d4a0f7;
     float: left;
   }
@@ -83,6 +86,7 @@ img {
     display: none;
   }
   header nav #MenuBtn {
+    width: 15vw;
     float: left;
   }
   header nav .clear {

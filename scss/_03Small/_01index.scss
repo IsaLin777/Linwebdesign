@@ -42,7 +42,8 @@ header{
         #Logo{
             // 寬度% or vw 單位 (螢幕可視範圍寬度的百分比)
             // width: $w10 * 8 + 5%;
-            // @include LBW(8,5%);
+            // 單位不同無法計算，所以改為同一單位vw
+            @include LBW(8,5vw);
             background-color: rgb(212, 160, 247); 
             float:left;
         }
@@ -56,7 +57,8 @@ header{
         }
         // 靠左排列(與Logo同一行)
         #MenuBtn{
-            // width:$w10 * 1 + 5%;
+            // 單位不同無法計算，所以改為同一單位vw
+            width:$w10 * 1 + 5vw;
             // 浮點對齊法:靠左對齊 float:left
             float:left;
         }
