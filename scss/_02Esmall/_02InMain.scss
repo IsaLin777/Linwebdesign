@@ -8,6 +8,13 @@
         position: relative;
 
         .Btn{
+            width: 30px;
+            height: 6vh * 2;
+            // 水平置中
+            text-align: center;
+            // 垂直置中 高度=行距
+            line-height: 6vh * 2;
+            top: 20vh - 6vh;
             font-size: $Trem * 2;
             // @include DN; (註記掉，不須隱藏了，要來調整<>在Banner上的位置
             // 定位點 (疊到圖片001...005的圖片上方)
@@ -16,9 +23,13 @@
             z-index: 5;
         }
         .LeftBtn{
-            width: $w10* 0.7;
-            padding: 10px;
+            left: 2.5vw;
             background-color: bisque;
+        }
+        .RightBtn{
+            // 單獨呼叫方向 右邊為0 (物件靠右對齊);float浮點對齊，配合上下左右方向推動；通常不會整個貼在右邊界上，所以給2.5vw的空間
+            right: 2.5vw;
+            background-color: chartreuse;
         }
         #ImgBox{
             // 想更改Banner區的高度，必須把區域倍數放大*25，但是放大到需要的高度，寬度就超出版位了。

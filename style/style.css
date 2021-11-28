@@ -85,14 +85,22 @@ em 基礎為 1em=16px; rem 基礎為 1rem=16px */
     position: relative;
   }
   #Main #Banner .Btn {
+    width: 30px;
+    height: 12vh;
+    text-align: center;
+    line-height: 12vh;
+    top: 14vh;
     font-size: 2rem;
     position: absolute;
     z-index: 5;
   }
   #Main #Banner .LeftBtn {
-    width: 7vw;
-    padding: 10px;
+    left: 2.5vw;
     background-color: bisque;
+  }
+  #Main #Banner .RightBtn {
+    right: 2.5vw;
+    background-color: chartreuse;
   }
   #Main #Banner #ImgBox {
     width: 100vw;
