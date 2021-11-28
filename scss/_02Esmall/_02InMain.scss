@@ -1,16 +1,19 @@
 #Main{
     background-color: rgb(152, 194, 196);
     #Banner{
+        width: $w10*10;
+        // 溢位設定，將超出的可視範圍給隱藏，類似遮側片
+        overflow: hidden;
         .LeftBtn,
         .RightBtn{
             @include DN;
         }
         #ImgBox{
-            width:$w10*10;
+            width:$w10*25;
             @include DNli;
             background-color: rgb(34, 139, 113);
             li{
-                width:$w10*10;
+                width:$w10*25;
                 float:left;
                 // 定位點 絕對定位 (把所有圖都疊在一起)
                 position:absolute;
