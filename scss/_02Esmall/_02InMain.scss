@@ -1,0 +1,20 @@
+#Main{
+    background-color: rgb(152, 194, 196);
+    #Banner{
+        .LeftBtn,
+        .RightBtn{
+            @include DN;
+        }
+        #ImgBox{
+            width:$w10*10;
+            @include DNli;
+            background-color: forestgreen;
+            li{
+                width:$w10*10;
+                float:left;
+                // 定位點 絕對定位 (把所有圖都疊在一起)
+                position:absolute;
+            }
+        }
+    }
+}
