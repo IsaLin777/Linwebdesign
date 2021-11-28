@@ -87,14 +87,24 @@ img {
     display: none;
   }
   #Main #Banner #ImgBox {
-    width: 250vw;
+    width: 100vw;
     list-style-type: none;
+    padding-bottom: 40vh;
     background-color: #228b71;
   }
   #Main #Banner #ImgBox li {
-    width: 250vw;
+    width: 100vw;
     float: left;
     position: absolute;
+    font-size: 72px;
+    text-align: center;
+    padding-bottom: 40vh;
+  }
+  #Main #Banner #ImgBox .Item01 {
+    background-image: url(../../images/Banner/001.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 }
 

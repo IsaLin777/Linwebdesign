@@ -15,16 +15,36 @@
             // 想更改Banner區的高度，必須把區域倍數放大*25，但是放大到需要的高度，寬度就超出版位了。
             // 此時使用溢位設定overflow: hidden，可將超出的可視範圍給隱藏，類似遮色片。
             // 最後記得連同li清單的圖片一起放大25倍，讓比例與版位相同。
-            width:$w10*25;
+            width:$w10*10;
             @include DNli;
+            // 內間距 設定 下方間距，當成圖片的高度，單位 % 或者 vh
+            padding-bottom: 40vh; 
             background-color: rgb(34, 139, 113);
             li{
-                width:$w10*25;
+                width:$w10*10;
                 float:left;
                 // 定位點:相對定位；1.單獨呼叫時，原點(0,0)會位於畫面(可視範圍)的左上角
                 // 2.物件的副框架呼叫相對定位(position: relative)時，功能設為[重新定位原點至父框架]
                 // 定位點 絕對定位 (把所有圖都疊在一起)
                 position:absolute;
+                // 移動圖片位置，讓置中的商品照在放大25倍後，可以出現在Banner中央
+                // 因為不同尺寸的手機會有不同的中心位置，這個方式無法逐一計算，所以要利用背景圖片的方式修改
+                // margin-left: -235px;  (以前的做法，現在無法適應不同尺寸裝置了，教完就註記掉)
+                font-size: 72px;
+                text-align: center;
+                // 內間距 設定 下方間距，當成圖片的高度，單位 % 或者 vh
+                padding-bottom: 40vh; 
+            }
+            .Item01{
+                
+                // 背景圖片
+                background-image: url(../../images/Banner/001.jpg);
+                // 不重覆
+                background-repeat: no-repeat;
+                // 背景圖片 置中對齊
+                background-position: center;
+                // 背景圖片 尺寸
+                background-size: cover;
             }
         }
     }
