@@ -74,6 +74,23 @@ img {
   footer address {
     display: none;
   }
+  #Main {
+    background-color: #98c2c4;
+  }
+  #Main #Banner .LeftBtn,
+  #Main #Banner .RightBtn {
+    display: none;
+  }
+  #Main #Banner #ImgBox {
+    width: 100vw;
+    list-style-type: none;
+    background-color: forestgreen;
+  }
+  #Main #Banner #ImgBox li {
+    width: 100vw;
+    float: left;
+    position: absolute;
+  }
 }
 
 @media screen and (min-width: 576px) {
