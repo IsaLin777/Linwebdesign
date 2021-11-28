@@ -2,13 +2,16 @@
     background-color: rgb(152, 194, 196);
     #Banner{
         width: $w10*10;
-        // 溢位設定，將超出的可視範圍給隱藏，類似遮側片
+        // 溢位設定，將超出的可視範圍給隱藏，類似遮色片
         overflow: hidden;
         .LeftBtn,
         .RightBtn{
             @include DN;
         }
         #ImgBox{
+            // 想更改Banner區的高度，必須把區域倍數放大*25，但是放大到需要的高度，寬度就超出版位了。
+            // 此時使用溢位設定overflow: hidden，可將超出的可視範圍給隱藏，類似遮色片。
+            // 最後記得連同li清單的圖片一起放大25倍，讓比例與版位相同。
             width:$w10*25;
             @include DNli;
             background-color: rgb(34, 139, 113);
