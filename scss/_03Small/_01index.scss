@@ -73,6 +73,32 @@ header{
     }
 }
 footer{
+    //  物件的間距值 vh/rem /px 
+    margin-top:2rem;
+
+    // 水平線下方的間距值
+    hr{
+        margin-bottom: 2rem;
+    }
+    // 手機版次導覽列
+    nav{
+        ul{
+            width:80%;
+            // 彈性佈局
+            display: flex;
+            // 隱藏項目符號
+            @include DNli;
+            background-color: rgb(127, 151, 187)
+        }
+    }
+    // 版權宣告置中
+    p{
+        text-align:center;
+        // 版權宣告與4個選項清單間隔拉開
+        margin-top: 0.7rem;
+        // 版權宣告與頁面最底部間隔拉開
+        margin-bottom: 1rem;
+    }
     address{
         // 呼叫 混合函式
         @include DN;
