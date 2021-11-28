@@ -8,7 +8,7 @@
         #ImgBox{
             width:$w10*10;
             @include DNli;
-            background-color: forestgreen;
+            background-color: rgb(34, 139, 113);
             li{
                 width:$w10*10;
                 float:left;
