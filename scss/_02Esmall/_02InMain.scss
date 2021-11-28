@@ -23,6 +23,7 @@
             z-index: 5;
         }
         .LeftBtn{
+            // 通常不會整個貼在左邊界上，所以給2.5vw的空間
             left: 2.5vw;
             background-color: bisque;
         }
