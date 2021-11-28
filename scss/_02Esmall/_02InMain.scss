@@ -7,9 +7,18 @@
         // 定位點:相對定位
         position: relative;
 
-        .LeftBtn,
-        .RightBtn{
-            @include DN;
+        .Btn{
+            font-size: $Trem * 2;
+            // @include DN; (註記掉，不須隱藏了，要來調整<>在Banner上的位置
+            // 定位點 (疊到圖片001...005的圖片上方)
+            position: absolute;
+            // 移動階層 圖層 (不要被圖片001...005給蓋住了) z軸 表達<>和圖片001...005的階層關係
+            z-index: 5;
+        }
+        .LeftBtn{
+            width: $w10* 0.7;
+            padding: 10px;
+            background-color: bisque;
         }
         #ImgBox{
             // 想更改Banner區的高度，必須把區域倍數放大*25，但是放大到需要的高度，寬度就超出版位了。
