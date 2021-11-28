@@ -61,7 +61,7 @@ em 基礎為 1em=16px; rem 基礎為 1rem=16px */
     margin-bottom: 2rem;
   }
   footer nav ul {
-    width: 80%;
+    width: 90%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
