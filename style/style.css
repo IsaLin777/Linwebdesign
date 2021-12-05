@@ -17,6 +17,7 @@ em 基礎為 1em=16px; rem 基礎為 1rem=16px */
     background-color: pink;
   }
   header nav {
+    height: 60px;
     /*
         浮動對齊的問題 float
         1.#Logo與#MenuBtn物件的父框架nav，無寬度
@@ -50,10 +51,13 @@ em 基礎為 1em=16px; rem 基礎為 1rem=16px */
   }
   header nav #MenuBtn {
     float: left;
-  }
-  header nav #MenuBtn img {
-    width: 50px;
-    height: 50px;
+    background-color: tomato;
+    text-indent: 9999px;
+    width: 100vw;
+    background-image: url(../../images/icon/menu.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
   }
   header nav .clear {
     clear: both;
