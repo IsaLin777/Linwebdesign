@@ -232,7 +232,7 @@ em 基礎為 1em=16px; rem 基礎為 1rem=16px */
     height: 95px;
     text-align: center;
     line-height: 95px;
-    top: 120px;
+    top: 145px;
     font-size: 1.2rem;
     position: absolute;
     z-index: 5;
@@ -249,7 +249,7 @@ em 基礎為 1em=16px; rem 基礎為 1rem=16px */
   #Main #Banner #ImgBox {
     width: 100vw;
     list-style-type: none;
-    padding-bottom: 335px;
+    padding-bottom: 385px;
     background-color: #228b71;
   }
   #Main #Banner #ImgBox li {
@@ -258,7 +258,7 @@ em 基礎為 1em=16px; rem 基礎為 1rem=16px */
     position: absolute;
     font-size: 72px;
     text-align: center;
-    padding-bottom: 250px;
+    padding-bottom: 295px;
   }
   #Main #Banner #ImgBox .Item01 {
     width: 100vw;
@@ -342,82 +342,6 @@ em 基礎為 1em=16px; rem 基礎為 1rem=16px */
   }
   footer address {
     display: none;
-  }
-  #Main {
-    background-color: #98c2c4;
-  }
-  #Main #Banner {
-    width: 100vw;
-    overflow: hidden;
-    position: relative;
-  }
-  #Main #Banner .Btn {
-    width: 20px;
-    height: 95px;
-    text-align: center;
-    line-height: 95px;
-    top: 120px;
-    font-size: 1.2rem;
-    position: absolute;
-    z-index: 5;
-    border-radius: 15px;
-  }
-  #Main #Banner .LeftBtn {
-    left: 2.5vw;
-    background-color: rgba(255, 255, 255, 0.25);
-  }
-  #Main #Banner .RightBtn {
-    right: 2.5vw;
-    background-color: rgba(255, 255, 255, 0.25);
-  }
-  #Main #Banner #ImgBox {
-    width: 100vw;
-    list-style-type: none;
-    padding-bottom: 335px;
-    background-color: #228b71;
-  }
-  #Main #Banner #ImgBox li {
-    width: 100vw;
-    float: left;
-    position: absolute;
-    font-size: 72px;
-    text-align: center;
-    padding-bottom: 250px;
-  }
-  #Main #Banner #ImgBox .Item01 {
-    width: 100vw;
-    background-image: url(../../images/Banner/005.jpg);
-    background-repeat: no-repeat;
-    background-position: Center;
-    background-size: cover;
-  }
-  #Main #Banner #ImgBox .Item02 {
-    width: 100vw;
-    background-image: url(../../images/Banner/004.jpg);
-    background-repeat: no-repeat;
-    background-position: Center;
-    background-size: cover;
-  }
-  #Main #Banner #ImgBox .Item03 {
-    width: 100vw;
-    background-image: url(../../images/Banner/003.jpg);
-    background-repeat: no-repeat;
-    background-position: Center;
-    background-size: cover;
-  }
-  #Main #Banner #ImgBox .Item04 {
-    width: 100vw;
-    background-image: url(../../images/Banner/002.jpg);
-    background-repeat: no-repeat;
-    background-position: Center;
-    background-size: cover;
-  }
-  #Main #Banner #ImgBox .Item05 {
-    width: 100vw;
-    background-image: url(../../images/Banner/001.jpg);
-    background-repeat: no-repeat;
-    background-position: Center;
-    background-size: cover;
   }
 }
 
