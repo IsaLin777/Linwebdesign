@@ -12,11 +12,13 @@
 // 小裝置 >=576px min-width(最大寬度 含等於)
 @media screen and (min-width:576px){
     @import'_03Small/_01index';
+    @import'_03Small/_02InMain';
 }
 
 // 平板裝置 >=768px min-width(最大寬度 含等於)
 @media screen and (min-width:768px){
     @import'_04Medium/_01index';
+    @import'_04Medium/_02InMain';
 }
 
 // 大平板裝置 >=992px Large min-width(最大寬度 含等於)

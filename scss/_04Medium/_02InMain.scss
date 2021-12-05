@@ -40,8 +40,8 @@
             width:$w10*10;
             @include DNli;
             // 內間距 設定 下方間距，當成圖片的高度，單位 % 或者 vh
-            padding-bottom: 350px; 
-            background-color: rgb(34, 139, 113);
+            padding-bottom: 48.5vh; 
+            background-color: rgb(34, 59, 139);
             li{
                 width:$w10*10;
                 float:left;
@@ -54,8 +54,8 @@
                 // margin-left: -235px;  (以前的做法，現在無法適應不同尺寸裝置了，教完就註記掉)
                 font-size: 72px;
                 text-align: center;
-                // 內間距 設定 下方間距，當成圖片的高度，單位 % 或者 vh (會隨著裝置而改變) 800px * 0.26= 208px, 固定值 px
-                padding-bottom: 250px; 
+                // 內間距 設定 下方間距，當成圖片的高度，單位 % 或者 vh
+                padding-bottom: 40vh; 
             }
             .Item01{
                 
