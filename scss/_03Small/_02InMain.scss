@@ -6,15 +6,26 @@
         overflow: hidden;
         // 定位點:相對定位
         position: relative;
+        
+        $ImgPadding: 335px;
+            // 父框架的padding 335px-子框架的padding 250px= 相差值 $Differ
+            $Differ: 85px;
 
         .Btn{
             width: 20px;
-            height: 6vh * 2;
+            height: 95px;
+            // 12/05更改banner高度從比例計算高度改成固定px高度
+            // height: 6vh * 2;
             // 水平置中
             text-align: center;
             // 垂直置中 高度=行距
-            line-height: 6vh * 2;
-            top: 20vh - 6vh;
+            line-height: 95px;
+            // 12/05更改banner高度從比例計算高度改成固定px高度
+            // line-height: 6vh * 2;
+            // top: 20vh - 6vh;
+            // 左右按鈕，物件往下推算高度;(物件的父框架的高/2)-(按鈕高度/2) + 單位
+            // top: (335 /2) - (95/2)+ px;
+            top: ($ImgPadding /2) - (95px/2); 
             font-size: $Trem * 1.2;
             // @include DN; (註記掉，不須隱藏了，要來調整<>在Banner上的位置
             // 定位點 (疊到圖片001...005的圖片上方)
@@ -34,14 +45,18 @@
             background-color: rgba(255,255,255,0.25);
         }
         #ImgBox{
+            
             // 想更改Banner區的高度，必須把區域倍數放大*25，但是放大到需要的高度，寬度就超出版位了。
             // 此時使用溢位設定overflow: hidden，可將超出的可視範圍給隱藏，類似遮色片。
             // 最後記得連同li清單的圖片一起放大25倍，讓比例與版位相同。
             width:$w10*10;
             @include DNli;
             // 內間距 設定 下方間距，當成圖片的高度，單位 % 或者 vh
-            padding-bottom: 53vh; 
-            background-color: rgb(34, 59, 139);
+            // padding-bottom: 335px; 
+            // Padding bottom的值改為算式
+            padding-bottom:$ImgPadding;
+            
+            background-color: rgb(34, 139, 113);
             li{
                 width:$w10*10;
                 float:left;
@@ -54,8 +69,10 @@
                 // margin-left: -235px;  (以前的做法，現在無法適應不同尺寸裝置了，教完就註記掉)
                 font-size: 72px;
                 text-align: center;
-                // 內間距 設定 下方間距，當成圖片的高度，單位 % 或者 vh
-                padding-bottom: 40vh; 
+                // 內間距 設定 下方間距，當成圖片的高度，單位 % 或者 vh (會隨著裝置而改變) 800px * 0.26= 208px, 固定值 px
+                // padding-bottom: 250px;
+                // 子框架的padding=父框架的padding-相差值$Differ
+                padding-bottom: $ImgPadding - $Differ; 
             }
             .Item01{
                 
