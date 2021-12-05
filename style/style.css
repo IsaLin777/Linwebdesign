@@ -51,6 +51,10 @@ em 基礎為 1em=16px; rem 基礎為 1rem=16px */
   header nav #MenuBtn {
     float: left;
   }
+  header nav #MenuBtn img {
+    width: 50px;
+    height: 50px;
+  }
   header nav .clear {
     clear: both;
   }

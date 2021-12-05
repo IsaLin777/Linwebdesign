@@ -66,6 +66,11 @@ header{
             // width:$w10 * 1 + 5vw;
             // 浮點對齊法:靠左對齊 float:left
             float:left;
+            // 固定圖片的高度，讓頁首的高度不隨著裝置高度而變動
+            img{
+                width: 50px;
+                height: 50px;
+            }
         }
         .clear{
             @include clearfloat;
