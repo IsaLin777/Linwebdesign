@@ -117,9 +117,16 @@ em 基礎為 1em=16px; rem 基礎為 1rem=16px */
     padding-bottom: 40vh;
   }
   #Main #Banner #ImgBox .Item01 {
-    background-image: url(../../images/Banner/001.jpg);
+    background-image: url(../../images/Banner/002.jpg);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
+  }
+  #Main #Banner #ImgBox .Item02 {
+    width: 100vw;
+    background-image: url(../../images/Banner/004.jpg);
+    background-repeat: no-repeat;
+    background-position: Center;
     background-size: cover;
   }
 }

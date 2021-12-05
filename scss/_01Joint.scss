@@ -85,3 +85,21 @@ $Trem: 1rem;
 @mixin DNli{
     list-style-type:none;
 }
+
+// 背景圖片語法
+@mixin BPhoto ( $Material, $Image, $PosiTion, $Size ) {
+    // 變數設定 1.資料夾位置$Material; 圖片 $Image 2.對齊 $PosiTion 3.尺寸 $Size
+    // 路徑無法直接讀取變數名稱
+    // 解答:scss提供的語法，插值寫法(基於javascript的es6語法)，#{自訂名稱(只能英文和數字)}，
+    // 例如:#{$Image}，寫在路徑上，url(../../images/#{$Material}/#{$Image})
+
+    width: $w10*10;
+    // 背景圖片
+    background-image: url(../../images/#{$Material}/#{$Image});
+    // 不重覆
+    background-repeat: no-repeat;
+    // 背景圖片 置中對齊
+    background-position: $PosiTion;
+    // 背景圖片 尺寸
+    background-size: $Size;
+}
