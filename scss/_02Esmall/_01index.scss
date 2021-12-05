@@ -22,7 +22,6 @@ header{
 
     background-color: pink;
     nav{
-        height: 60px;
         /*
         浮動對齊的問題 float
         1.#Logo與#MenuBtn物件的父框架nav，無寬度
@@ -62,6 +61,7 @@ header{
         }
         // 靠左排列(與Logo同一行)
         #MenuBtn{
+            height: 60px;
             // 單位不同無法計算，所以改為同一單位vw
             // 寬度語法改從共用區呼叫過來到上方，與Logo和MenuBtn共用
             // width:$w10 * 1 + 5vw;
@@ -74,8 +74,8 @@ header{
             // }
             background-color: tomato;
             // 文字取代圖片，呈現背景圖，而隱藏文字；首行縮排
-            text-indent: 9999px;
-            @include BPhoto(icon,"menu.svg",center,contain);
+            text-indent: -9999px;
+            @include PhoneMenu(icon,"menu.svg",center,contain);
         }
         .clear{
             @include clearfloat;
