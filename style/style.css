@@ -221,6 +221,7 @@ em 基礎為 1em=16px; rem 基礎為 1rem=16px */
   #Main > #NewArrivals > .NCommodity > .Brief {
     width: 85%;
     text-align: justify;
+    margin-bottom: 10px;
   }
   #Main > #NewArrivals > .NCommodity > #PriceBox {
     width: 90%;
@@ -229,16 +230,27 @@ em 基礎為 1em=16px; rem 基礎為 1rem=16px */
     display: -ms-flexbox;
     display: flex;
     padding-bottom: 10px;
-    background-color: orangered;
   }
-  #Main > #NewArrivals > .NCommodity > #PriceBox > .OrignialPrice {
-    width: 40%;
+  #Main > #NewArrivals > .NCommodity > #PriceBox > .OriginalPrice {
+    width: 35%;
     font-size: 0.9rem;
     padding-top: 0.3rem;
   }
+  #Main > #NewArrivals > .NCommodity > #PriceBox > .OriginalPrice > span {
+    padding-left: 5px;
+    padding-right: 5px;
+    color: blue;
+  }
   #Main > #NewArrivals > .NCommodity > #PriceBox > .SalePrice {
-    width: 40%;
+    width: 45%;
     font-size: 1.2rem;
+  }
+  #Main > #NewArrivals > .NCommodity > #PriceBox > .SalePrice > span {
+    font-size: 1.7rem;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: brown;
+    font-weight: 600;
   }
   #Main > #NewArrivals > .NCommodity > #PriceBox > .ShoppingCart {
     width: 20%;
