@@ -172,6 +172,25 @@ em 基礎為 1em=16px; rem 基礎為 1rem=16px */
     margin-bottom: 20px;
     background-color: white;
   }
+  #Main > #NewArrivals > .NCommodity > #TitleBox {
+    width: 85%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    list-style-type: none;
+    background-color: powderblue;
+  }
+  #Main > #NewArrivals > .NCommodity > #TitleBox > .Title {
+    width: 70%;
+  }
+  #Main > #NewArrivals > .NCommodity > #TitleBox > .Number {
+    width: 30%;
+  }
+  #Main > #NewArrivals > .NCommodity > #TitleBox > .Text {
+    width: 100%;
+  }
   #Main > #NewArrivals > .NCommodity > .NNameBox {
     background-color: yellow;
   }
