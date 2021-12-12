@@ -118,8 +118,25 @@
         >.NCommodity{
             // 寬度
             width: $w10 * 8;
+            // 外間距
+            margin: {
+                bottom: 20px;
+            }
             // 背景顏色
             background-color: white;
+            
+            >.NNameBox{
+                background-color: yellow;
+                >ul{
+                    >li{
+                        // 隱藏項目符號
+                        list-style-type: none;
+                    }
+                }
+            }
+            >.Brief{
+                background-color: yellowgreen;
+            }
         }
     }
 }
