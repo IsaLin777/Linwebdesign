@@ -115,5 +115,11 @@
                 bottom: 15px;
             }
         }
+        >.NCommodity{
+            // 寬度
+            width: $w10 * 8;
+            // 背景顏色
+            background-color: white;
+        }
     }
 }
