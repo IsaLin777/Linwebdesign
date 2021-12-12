@@ -162,10 +162,8 @@ em 基礎為 1em=16px; rem 基礎為 1rem=16px */
   #Main > #NewArrivals > h1 {
     font-size: 2.3rem;
     text-align: center;
-  }
-  #Main > #NewArrivals > h1 padding {
-    top: 15px;
-    bottom: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
   #Main > #NewArrivals > .NCommodity {
     width: 80vw;
@@ -181,9 +179,8 @@ em 基礎為 1em=16px; rem 基礎為 1rem=16px */
         flex-wrap: wrap;
     list-style-type: none;
     letter-spacing: 2px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    background-color: #4e6b6e;
+    padding-top: 15px;
+    padding-bottom: 10px;
   }
   #Main > #NewArrivals > .NCommodity > #TitleBox > .Title {
     width: 70%;
@@ -193,11 +190,19 @@ em 基礎為 1em=16px; rem 基礎為 1rem=16px */
     width: 30%;
     font-size: 1.1rem;
     text-align: right;
+    padding-top: 0.6rem;
     background-color: burlywood;
   }
   #Main > #NewArrivals > .NCommodity > #TitleBox > .Text {
     width: 100%;
     text-align: right;
+  }
+  #Main > #NewArrivals > .NCommodity > .Images {
+    width: 280px;
+    height: 230px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    background-color: #fd2c55;
   }
   #Main > #NewArrivals > .NCommodity > .NNameBox {
     background-color: yellow;

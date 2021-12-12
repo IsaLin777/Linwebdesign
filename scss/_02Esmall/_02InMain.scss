@@ -110,7 +110,7 @@
             // 標題置中
             text-align: center;
             // 內間距
-            padding{
+            padding: {
                 top: 15px;
                 bottom: 15px;
             }
@@ -137,24 +137,31 @@
                 list-style-type:none;
                 // 字距
                 letter-spacing: 2px;
-                // 與外框的距離
-                margin:{
+                // 與外框的距離，設定為內間距
+                padding: {
                     top: 15px;
-                    bottom: 15px;
+                    bottom: 10px;
                 }
-                background-color: rgb(78, 107, 110);
+                
 
                 // 計算式
                 $TW: $W1P * 7;
                 $NW: $W1P * 10 - $TW;
+
+                $TFS: $Trem*1.7;
+                $NFS: $Trem*1.1;
                 >.Title{
                     width: $TW;
-                    font-size: $Trem * 1.7;
+                    font-size: $TFS;
                 }
                 >.Number{
                     width: $NW;
-                    font-size: $Trem * 1.1;
+                    font-size: $NFS;
                     text-align: right;
+                    // 計算 Title與 Number 內間距的差
+                    padding: {
+                        top: $TFS - $NFS;
+                    }
                     background-color: burlywood;
                 }
                 >.Text{
@@ -162,6 +169,19 @@
                     text-align: right;
                 }
 
+            }
+            >.Images{
+                // 寬度
+                width: 280px;
+                // 高度 設定絕對高, 不會隨著裝置高度變動
+                height: 230px;
+                // 外間距
+                margin: {
+                    bottom: 10px;
+                }
+                // 圓角矩形 邊框設定轉角的角度
+                border-radius: 15px;
+                background-color: rgb(253, 44, 85);
             }
 
             >.NNameBox{
