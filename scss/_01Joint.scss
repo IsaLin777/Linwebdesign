@@ -122,6 +122,6 @@ $Trem: 1rem;
 }
 // 圓角矩形
 @mixin Rounded ($Num) {
-    // 邊框角度設定，建議單位為 像素
+    // 邊框角度設定，建議單位為 像素 
     border-radius: $Num+ px;
 }
