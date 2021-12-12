@@ -1,6 +1,7 @@
 // 呼叫heml標籤，例如:nav，稱作 類型選擇
 // 呼叫 id，例如<li id="test"><li>，id="test"，[#]ID選擇器；[#test]
 // 呼叫class，class="test1"，[.]類別選擇器；[.test1]
+// 後代選擇器，例如header nav li，nav框架中若存在li標籤，不論是哪一個層級，都會直接受到影響
 // scss 1.巢狀寫法 2.變數 $test(設定計算用的基礎值)(一定要寫在最外層且不能與其他變數相同) 3.繼承 %test (css3語法相同，但能集中呈現)；呼叫方式 @extend %test
 
 // 傳統css3的寫法 隱藏

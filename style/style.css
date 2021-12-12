@@ -159,6 +159,14 @@ em 基礎為 1em=16px; rem 基礎為 1rem=16px */
     background-position: Center;
     background-size: cover;
   }
+  #Main > #NewArrivals > h1 {
+    font-size: 2.3rem;
+    text-align: center;
+  }
+  #Main > #NewArrivals > h1 padding {
+    top: 15px;
+    bottom: 15px;
+  }
 }
 
 @media screen and (min-width: 576px) {
