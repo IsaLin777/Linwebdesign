@@ -135,19 +135,31 @@
                 flex-wrap:wrap;
                 // 隱藏項目符號
                 list-style-type:none;
-                background-color: powderblue;
+                // 字距
+                letter-spacing: 2px;
+                // 與外框的距離
+                margin:{
+                    top: 15px;
+                    bottom: 15px;
+                }
+                background-color: rgb(78, 107, 110);
 
                 // 計算式
                 $TW: $W1P * 7;
                 $NW: $W1P * 10 - $TW;
                 >.Title{
                     width: $TW;
+                    font-size: $Trem * 1.7;
                 }
                 >.Number{
                     width: $NW;
+                    font-size: $Trem * 1.1;
+                    text-align: right;
+                    background-color: burlywood;
                 }
                 >.Text{
                     width:$W1P * 10;
+                    text-align: right;
                 }
 
             }
