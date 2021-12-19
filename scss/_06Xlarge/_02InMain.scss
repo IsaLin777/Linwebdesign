@@ -119,10 +119,15 @@
         background-image: url(../../images/BG/001.jpg);
 
         > article{
+            width: $W1P * 8;
+            // 一行 兩欄
+            display: flex;
+            flex-wrap: wrap;
+            
             >.NCommodity{
                 // 寬度
                 // width: $w10 * 8;
-                width: $w10 * 9;
+                width: $W1P *10 / 4 - 1%;
                 // 外間距
                 margin: {
                     bottom: 20px;
@@ -179,7 +184,7 @@
                 >.Images{
                     // 寬度
                     // width: 280px;
-                    width: $W1P * 9.2;
+                    width: $W1P * 9;
                     // 高度 設定絕對高, 不會隨著裝置高度變動
                     // height: 230px;
                     // 外間距
@@ -288,7 +293,7 @@
         }
         // more
         >.more{
-            width: $W1P * 8;
+            width: $W1P*8;
             // 文字對齊靠右
             text-align: right;
             // 隱藏項目符號
@@ -336,10 +341,15 @@
         background-image: url(../../images/BG/002.jpg);
 
         > article{
+            width: $W1P * 8;
+            // 一行 兩欄
+            display: flex;
+            flex-wrap: wrap;
+
             >.BCommdity{
                 // 寬度
                 // width: $w10 * 8;
-                width: $w10 * 9;
+                width: $W1P *10 / 4 - 1%;
                 // 外間距
                 margin: {
                     bottom: 20px;
@@ -363,7 +373,7 @@
                 >.Images{
                     // 寬度
                     // width: 280px;
-                    width: $W1P * 9.2;
+                    width: $W1P * 9;
                     // 高度 設定絕對高, 不會隨著裝置高度變動
                     // height: 230px;
                     // 外間距

@@ -74,7 +74,7 @@ header{
 }
 footer{
     //  物件的間距值 vh/rem /px 
-    margin-top:2rem;
+    // margin-top:2rem;
 
     // 水平線下方的間距值
     hr{
@@ -82,13 +82,14 @@ footer{
     }
     // 手機版次導覽列
     nav{
+        margin-bottom: 2rem;
         ul{
             width:80%;
             // 彈性佈局
             display: flex;
             // 隱藏項目符號
             @include DNli;
-            background-color: rgb(127, 151, 187)
+            // background-color: rgb(127, 151, 187)
         }
     }
     // 版權宣告置中
