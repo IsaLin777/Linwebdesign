@@ -263,14 +263,17 @@ em 基礎為 1em=16px; rem 基礎為 1rem=16px */
     width: 80%;
     text-align: right;
     list-style-type: none;
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     letter-spacing: 2px;
     margin-bottom: 15px;
-    background-color: burlywood;
   }
   #Main > #NewArrivals > .more > a {
+    padding: 5px 30px;
+    display: inline-block;
+    background-color: #af3700;
     text-decoration: none;
-    color: #af3700;
+    color: white;
+    border-radius: 20px;
   }
 }
 
