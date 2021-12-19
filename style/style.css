@@ -259,6 +259,19 @@ em 基礎為 1em=16px; rem 基礎為 1rem=16px */
   #Main > #NewArrivals > .NCommodity > #PriceBox > .ShoppingCart {
     width: 20%;
   }
+  #Main > #NewArrivals > .more {
+    width: 80%;
+    text-align: right;
+    list-style-type: none;
+    font-size: 1.7rem;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    background-color: burlywood;
+  }
+  #Main > #NewArrivals > .more > a {
+    text-decoration: none;
+    color: #af3700;
+  }
 }
 
 @media screen and (min-width: 576px) {
