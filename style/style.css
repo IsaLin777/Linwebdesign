@@ -325,38 +325,6 @@ em 基礎為 1em=16px; rem 基礎為 1rem=16px */
     text-align: justify;
     padding-bottom: 15px;
   }
-  #Main > #Bestseller > article > .BCommdity > #PriceBox {
-    width: 90%;
-    list-style-type: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding-bottom: 10px;
-  }
-  #Main > #Bestseller > article > .BCommdity > #PriceBox > .OriginalPrice {
-    width: 35%;
-    font-size: 0.9rem;
-    padding-top: 0.3rem;
-  }
-  #Main > #Bestseller > article > .BCommdity > #PriceBox > .OriginalPrice > span {
-    padding-left: 5px;
-    padding-right: 5px;
-    color: blue;
-  }
-  #Main > #Bestseller > article > .BCommdity > #PriceBox > .SalePrice {
-    width: 45%;
-    font-size: 1.2rem;
-  }
-  #Main > #Bestseller > article > .BCommdity > #PriceBox > .SalePrice > span {
-    font-size: 1.7rem;
-    padding-left: 5px;
-    padding-right: 5px;
-    color: brown;
-    font-weight: 600;
-  }
-  #Main > #Bestseller > article > .BCommdity > #PriceBox > .ShoppingCart {
-    width: 20%;
-  }
   #Main > #Bestseller > .more {
     width: 80%;
     text-align: right;
@@ -693,38 +661,6 @@ em 基礎為 1em=16px; rem 基礎為 1rem=16px */
     width: 85%;
     text-align: justify;
     padding-bottom: 15px;
-  }
-  #Main > #Bestseller > article > .BCommdity > #PriceBox {
-    width: 90%;
-    list-style-type: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding-bottom: 10px;
-  }
-  #Main > #Bestseller > article > .BCommdity > #PriceBox > .OriginalPrice {
-    width: 35%;
-    font-size: 0.9rem;
-    padding-top: 0.3rem;
-  }
-  #Main > #Bestseller > article > .BCommdity > #PriceBox > .OriginalPrice > span {
-    padding-left: 5px;
-    padding-right: 5px;
-    color: blue;
-  }
-  #Main > #Bestseller > article > .BCommdity > #PriceBox > .SalePrice {
-    width: 45%;
-    font-size: 1.2rem;
-  }
-  #Main > #Bestseller > article > .BCommdity > #PriceBox > .SalePrice > span {
-    font-size: 1.7rem;
-    padding-left: 5px;
-    padding-right: 5px;
-    color: brown;
-    font-weight: 600;
-  }
-  #Main > #Bestseller > article > .BCommdity > #PriceBox > .ShoppingCart {
-    width: 20%;
   }
   #Main > #Bestseller > .more {
     width: 80%;
@@ -1093,38 +1029,6 @@ em 基礎為 1em=16px; rem 基礎為 1rem=16px */
     text-align: justify;
     padding-bottom: 15px;
   }
-  #Main > #Bestseller > article > .BCommdity > #PriceBox {
-    width: 90%;
-    list-style-type: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding-bottom: 10px;
-  }
-  #Main > #Bestseller > article > .BCommdity > #PriceBox > .OriginalPrice {
-    width: 35%;
-    font-size: 0.9rem;
-    padding-top: 0.3rem;
-  }
-  #Main > #Bestseller > article > .BCommdity > #PriceBox > .OriginalPrice > span {
-    padding-left: 5px;
-    padding-right: 5px;
-    color: blue;
-  }
-  #Main > #Bestseller > article > .BCommdity > #PriceBox > .SalePrice {
-    width: 45%;
-    font-size: 1.2rem;
-  }
-  #Main > #Bestseller > article > .BCommdity > #PriceBox > .SalePrice > span {
-    font-size: 1.7rem;
-    padding-left: 5px;
-    padding-right: 5px;
-    color: brown;
-    font-weight: 600;
-  }
-  #Main > #Bestseller > article > .BCommdity > #PriceBox > .ShoppingCart {
-    width: 20%;
-  }
   #Main > #Bestseller > .more {
     width: 80%;
     text-align: right;
@@ -1409,38 +1313,6 @@ em 基礎為 1em=16px; rem 基礎為 1rem=16px */
     width: 85%;
     text-align: justify;
     padding-bottom: 15px;
-  }
-  #Main > #Bestseller > article > .BCommdity > #PriceBox {
-    width: 90%;
-    list-style-type: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding-bottom: 10px;
-  }
-  #Main > #Bestseller > article > .BCommdity > #PriceBox > .OriginalPrice {
-    width: 35%;
-    font-size: 0.9rem;
-    padding-top: 0.3rem;
-  }
-  #Main > #Bestseller > article > .BCommdity > #PriceBox > .OriginalPrice > span {
-    padding-left: 5px;
-    padding-right: 5px;
-    color: blue;
-  }
-  #Main > #Bestseller > article > .BCommdity > #PriceBox > .SalePrice {
-    width: 45%;
-    font-size: 1.2rem;
-  }
-  #Main > #Bestseller > article > .BCommdity > #PriceBox > .SalePrice > span {
-    font-size: 1.7rem;
-    padding-left: 5px;
-    padding-right: 5px;
-    color: brown;
-    font-weight: 600;
-  }
-  #Main > #Bestseller > article > .BCommdity > #PriceBox > .ShoppingCart {
-    width: 20%;
   }
   #Main > #Bestseller > .more {
     width: 80%;

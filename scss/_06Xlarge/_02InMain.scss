@@ -424,60 +424,7 @@
                         bottom: 15px;
                     }
                 }
-                >#PriceBox{
-                    // 寬度
-                    width: $W1P * 9;
-                    // 隱藏項目符號
-                    list-style-type: none;
-                    // 彈性佈局
-                    display:flex;
-                    // 靠近父框架的上下間距用內間距padding去推，而不是外間距margin
-                    padding: {
-                        bottom:10px;
-                    }
-                    // background-color: orangered;
-    
-                    >.OriginalPrice{
-                        // 寬度
-                        width: $W1P * 3.5;
-                        // 文字尺寸
-                        font-size: $Trem * 0.9;
-                        // 內間距
-                        padding: {
-                            top: $Trem * 0.3;
-                        }
-                        >span{
-                            padding: {
-                                left: 5px;
-                                right: 5px;
-                            }
-                            // 文字顏色
-                            color:blue;
-                        }
-                    }
-                    >.SalePrice{
-                        // 寬度
-                        width: $W1P * 4.5;
-                        // 文字尺寸
-                        font-size:$Trem * 1.2;
-                        >span{
-                            // em or rem的尺寸，基於根目錄之下的值為基準
-                            font-size: $Trem * 1.7;
-                            padding: {
-                                left: 5px;
-                                right: 5px;
-                            }
-                            // 文字顏色
-                            color: brown;
-                            // 文字粗細
-                            font-weight: 600;
-                        };
-                    }
-                    >.ShoppingCart{
-                        // 寬度
-                        width: $W1P * 2;
-                    }
-                }
+
             }
         }
         // more
