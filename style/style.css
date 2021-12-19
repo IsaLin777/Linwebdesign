@@ -169,6 +169,8 @@ em 基礎為 1em=16px; rem 基礎為 1rem=16px */
     width: 80vw;
     margin-bottom: 20px;
     background-color: white;
+    -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
   }
   #Main > #NewArrivals > .NCommodity > #TitleBox {
     width: 85%;
@@ -198,10 +200,12 @@ em 基礎為 1em=16px; rem 基礎為 1rem=16px */
   }
   #Main > #NewArrivals > .NCommodity > .Images {
     width: 280px;
-    height: 230px;
     margin-bottom: 10px;
     border-radius: 15px;
-    background-color: #fd2c55;
+  }
+  #Main > #NewArrivals > .NCommodity > .Images > a > img {
+    border: 2px solid #440707;
+    border-radius: 15px;
   }
   #Main > #NewArrivals > .NCommodity > .NNameBox {
     width: 90%;

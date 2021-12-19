@@ -124,6 +124,8 @@
             }
             // 背景顏色
             background-color: white;
+            // 陰影 X軸 Y軸 模糊 顏色
+            box-shadow:5px 5px 5px rgba(0,0,0,0.25);
 
             // 計算式
             $TW: $W1P * 7;
@@ -173,14 +175,23 @@
                 // 寬度
                 width: 280px;
                 // 高度 設定絕對高, 不會隨著裝置高度變動
-                height: 230px;
+                // height: 230px;
                 // 外間距
                 margin: {
                     bottom: 10px;
                 }
                 // 圓角矩形 邊框設定轉角的角度
                 border-radius: 15px;
-                background-color: rgb(253, 44, 85);
+                // background-color: rgb(253, 44, 85);
+                
+                >a{
+                    >img{
+                        // 圖片邊框 線段的粗細 線段的樣式 (實線) 顏色
+                        border: 2px solid rgb( 68, 7, 7);
+                        border-radius: 15px;
+                    }
+                }
+
             }
 
             >.NNameBox{
