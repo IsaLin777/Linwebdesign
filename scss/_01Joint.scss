@@ -129,7 +129,7 @@ $Trem: 1rem;
     border-radius: $Num+ px;
 }
 // 新品上架 架構
-// 
+// 標題寬度 標題文字倍數 庫存文字倍數 外框寬度 商品框架背景顏色 內文字距 圖片圓角 圖片邊緣
 @mixin NewMer($TWM,$TFSFSM,$NFSFSM,$MainW,$BR,$BG,$BB,$TitleLe,$ImagesRa,$LineS) {
          // 計算式
         $TW: $W1P * $TWM;
