@@ -21,7 +21,7 @@ header{
     // height: 10vh;(用menu圖片撐高框架，故先拿掉header height)
 
     background-color: rgb(208, 138, 255);
-    nav{
+    >#MainNav{
         /*
         浮動對齊的問題 float
         1.#Logo與#MenuBtn物件的父框架nav，無寬度
@@ -39,10 +39,11 @@ header{
         // 解決方法二:清除浮動狀態，由nav設定
 
         // 引入的程式執行結果為 Logo與MenuBtn的寬度，所以要寫在父框架(nav)
-        @include LBW(8,5vw);
+        @include LBW(10,0);
         
         // 靠左排列(與MenuBtn同一行)
         #Logo{
+            width: $W1P * 8;
             // 寬度% or vw 單位 (螢幕可視範圍寬度的百分比)
             // width: $w10 * 8 + 5%;
             // 寬度向下相容:讀取_03Small的設定值
@@ -57,15 +58,21 @@ header{
         }
         #Icon{
             // 呼叫 混合函式
-            @include DN;
+            @include DNli;
         }
         // 靠左排列(與Logo同一行)
         #MenuBtn{
+            width: $W1P * 2;
+            height: 60px;
             // 寬度向下相容:讀取_03Small的設定值
             // 寬度語法改從共用區呼叫過來到上方，與Logo和MenuBtn共用
             // width:$w10 * 1 + 5vw;
             // 浮點對齊法:靠左對齊 float:left
             float:left;
+            background-color: tomato;
+            // 文字取代圖片，呈現背景圖，而隱藏文字；首行縮排
+            text-indent: -9999px;
+            @include PhoneMenu(icon,"menu.svg",center,contain);
         }
         .clear{
             @include clearfloat;

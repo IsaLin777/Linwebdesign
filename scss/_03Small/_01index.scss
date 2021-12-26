@@ -12,7 +12,7 @@
 // 目前使用的單位(數值)式百分比(%)；網頁的固定單位--像素px
 header{
     // 寬度100%；我要頁頭百分之百的寬度時，百分之百乘以10倍的意思)
-    width: $w10*10;
+    width: $W1P * 10;
     // height: 80px;(解決方法一，最後選用解決方法二，故註記)
 
     // 設定高度 單位為%( 因為未給予基準值，所以無法計算出實際高度)
@@ -20,8 +20,8 @@ header{
     // vh 單位(螢幕可視範圍高度的百分比，計算出實際高度；依照裝置的高度計算；建議10~12之間)
     // height: 10vh;(用menu圖片撐高框架，故先拿掉header height)
 
-    background-color: rgb(160, 173, 248);
-    nav{
+    // background-color: rgb(160, 173, 248);
+    >#MainNav{
         /*
         浮動對齊的問題 float
         1.#Logo與#MenuBtn物件的父框架nav，無寬度
@@ -39,15 +39,18 @@ header{
         // 解決方法二:清除浮動狀態，由nav設定
 
         // 引入的程式執行結果為 Logo與MenuBtn的寬度，所以要寫在父框架(nav)
-        @include LBW(8,5vw);
-        
+        @include LBW(10,0);
+        // height: 65px;
+        background-color: yellow;
+
         // 靠左排列(與MenuBtn同一行)
         #Logo{
+            width: $W1P * 8;
             // 寬度% or vw 單位 (螢幕可視範圍寬度的百分比)
             // width: $w10 * 8 + 5%;
             // 單位不同無法計算，所以改為同一單位vw
             // 寬度語法改從共用區呼叫過來到上方，與Logo和MenuBtn共用
-            // @include LBW(8,5vw);
+            @include LBW(8,5vw);
             background-color: rgb(212, 160, 247); 
             float:left;
         }
@@ -61,11 +64,17 @@ header{
         }
         // 靠左排列(與Logo同一行)
         #MenuBtn{
+            width: $W1P * 2;
+            height: 60px;
             // 單位不同無法計算，所以改為同一單位vw
             // 寬度語法改從共用區呼叫過來到上方，與Logo和MenuBtn共用
             // width:$w10 * 1 + 5vw;
             // 浮點對齊法:靠左對齊 float:left
             float:left;
+            // 文字取代圖片，呈現背景圖，而隱藏文字；首行縮排
+            text-indent: -9999px;
+            @include PhoneMenu(icon,"menu.svg",center,contain);
+            background-color: tomato;
         }
         .clear{
             @include clearfloat;

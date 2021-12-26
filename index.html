@@ -20,7 +20,7 @@
     <!-- 頁首header(每頁固定) 主內容main(隨著頁面主題而不同，IE瀏覽器不支援) 頁尾footer(每頁固定) 文章(article，IE支援取代main標籤) -->
     <header>
          <!-- 導覽列(主按鈕:首頁 商標圖 全系列商品 穿搭日誌 關於品牌 Q&A 聯絡我們，小圖示 FB IG Line 小購物車圖示 會員登入圖示 搜尋列) -->
-         <nav>
+         <nav id="MainNav">
             <!-- 導覽列標籤 nav 項目清單(ul li) 項目(ul) 清單(li)；商標 標題1(h1) -->
             
                 <h1 id="Logo">D STATE Urban Outdoor</h1>
@@ -32,12 +32,6 @@
                 </div>
                 <ul class="BtnBox">
                     <li class="AllCollection">All Collection 全系列商品
-                        <ul class="Collections">
-                            <li class="NewArrivals">New Arrivals 新品上架</li>
-                            <li class="SeasonalItem">Seasonal Item 季節商品</li>
-                            <li class="MensWear">Men's Wear 男裝系列</li>
-                            <li class="WomensWear">Women's Wear 女裝系列</li>
-                        </ul>
                     </li>
                     <li>Journal 穿搭日誌</li>
                     <li>About 關於品牌</li>
@@ -55,9 +49,30 @@
                 12345
                 </div>
                 <!-- 清除浮動框架p(段落) -->
-                <p class="clear"></p>
+                <div class="clear"></div>
         </nav>
+
+        <!-- 行動裝置 選單 -->
+        <nav id="MenuNav">
+            <li id= "close">Close</li>
+            <h1>D STATE</h1>
+            <ul>
+                <li class="NewArrivals item">新品上架</li>
+                <li class="Bestseller item">熱銷推薦</li>
+                <li class="itemtwo MensWear">男裝系列</li>
+                <li class="itemtwo WomensWear">女裝系列</li>
+                <li class="itemtwo Unisex">中性風格</li>
+                <li class="itemtwo SS">春夏商品</li>
+                <li class="itemtwo FW">秋冬商品</li>
+                <li class="itemtwo Bags">背包配件</li>
+                <li class="itemtwo Journal">穿搭日誌</li>
+                <li class="itemtwo About">關於品牌</li>
+                <li class="itemtwo Q&A">常見問題</li>
+            </ul>
+        </nav>
+       
     </header>
+   
     <article id="Main">
         <!-- 網頁內容 會隨著頁面內容而更動 首頁廣告輪播區 -->
         <!-- 廣告區塊 div 命名 輪播功能用 javascrip 命名建議用 ID選擇器； CSS3輪播功能 命名 ID選擇器 或是 類別選擇器(class) -->

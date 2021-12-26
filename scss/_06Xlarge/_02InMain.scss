@@ -121,17 +121,21 @@
         > article{
             width: $W1P * 8;
             // 一行 兩欄
-            display: flex;
-            flex-wrap: wrap;
+            // display: flex;
+            // flex-wrap: wrap;
             
             >.NCommodity{
+                // 寬度變數
+                $NComW: $W1P * 10 / 4 - 1;
                 // 寬度
-                // width: $w10 * 8;
-                width: $W1P *10 / 4 - 1%;
+                width:$NComW;
                 // 外間距
                 margin: {
                     bottom: 20px;
+                    left: ((($W1P* 10) - ($NComW * 4)) / 2) / 4;
+                    right: ((($W1P* 10) - ($NComW * 4)) / 2) / 4;
                 }
+
                 // 背景顏色
                 background-color: white;
                 // 陰影 X軸 Y軸 模糊 顏色
@@ -343,17 +347,21 @@
         > article{
             width: $W1P * 8;
             // 一行 四欄
-            display: flex;
-            flex-wrap: wrap;
+            // display: flex;
+            // flex-wrap: wrap;
 
             >.BCommdity{
+                // 寬度變數
+                $BComW: $W1P * 10 / 4 - 1;
                 // 寬度
-                // width: $w10 * 8;
-                width: $W1P *10 / 4 - 1%;
+                width:$BComW;
                 // 外間距
                 margin: {
                     bottom: 20px;
+                    left: ((($W1P* 10) - ($BComW * 4)) / 2) / 4;
+                    right: ((($W1P* 10) - ($BComW * 4)) / 2) / 4;
                 }
+
                 // 背景顏色
                 background-color: white;
                 // 陰影 X軸 Y軸 模糊 顏色

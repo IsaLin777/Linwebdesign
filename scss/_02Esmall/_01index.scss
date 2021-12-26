@@ -13,16 +13,15 @@
 // 目前使用的單位(數值)式百分比(%)；網頁的固定單位--像素px
 header{
     // 寬度100%；我要頁頭百分之百的寬度時，百分之百乘以10倍的意思)
-    width: $W1P*10;
+    width: $W1P * 10;
     // height: 80px;(解決方法一，最後選用解決方法二，故註記)
 
     // 設定高度 單位為%( 因為未給予基準值，所以無法計算出實際高度)
     // height:15%;
     // vh 單位(螢幕可視範圍高度的百分比，計算出實際高度；依照裝置的高度計算；建議10~12之間)
     // height: 10vh;(用menu圖片撐高框架，故先拿掉header height)
-
     background-color: pink;
-    nav{
+    > #MainNav{
         /*
         浮動對齊的問題 float
         1.#Logo與#MenuBtn物件的父框架nav，無寬度
@@ -38,18 +37,20 @@ header{
         height:65px;(解決方法一，最後選用解決方法二，故註記)
         */
         // 解決方法二:清除浮動狀態，由nav設定
-        height:60px;
+        // height:60px;
         // 引入的程式執行結果為 Logo與MenuBtn的寬度，所以要寫在父框架(nav)
-        @include LBW(8,5vw);
-        // 定位點 停佇
-        position: fixed;
-        // 靠上
-        top:0;
-        z-index: 999;
-        background-color: cornflowerblue;
+        @include LBW(10,0);
+        // width: $W1P * 10;
+        // // 定位點 停佇
+        // position: fixed;
+        // // 靠上
+        // top:0;
+        // z-index: 999;
+        // background-color:cornflowerblue;
 
         // 靠左排列(與MenuBtn同一行)
-        #Logo{
+        > #Logo{
+            width: $W1P * 8;
             // 寬度% or vw 單位 (螢幕可視範圍寬度的百分比)
             // 寬度語法改從共用區呼叫過來到上方，與Logo和MenuBtn共用
             // @include LBW(8,5vw)
@@ -66,8 +67,9 @@ header{
             // 呼叫 混合函式
             @include DN;
         }
-        // 靠左排列(與Logo同一行)
-        #MenuBtn{
+         // 靠左排列(與Logo同一行)
+         #MenuBtn{
+            width: $W1P * 2;
             height: 60px;
             // 單位不同無法計算，所以改為同一單位vw
             // 寬度語法改從共用區呼叫過來到上方，與Logo和MenuBtn共用
@@ -84,9 +86,86 @@ header{
             text-indent: -9999px;
             @include PhoneMenu(icon,"menu.svg",center,contain);
         }
+
         .clear{
             @include clearfloat;
         }
+    }
+    > #MenuNav{
+        
+        // 寬度與高度 (裝置的可視高度)
+        width: $W1P * 10;
+        height: $W1P * 10;
+        // 定位點 絕對定位點
+        position:absolute;
+        // 停佇
+        position:fixed;
+        // 靠上
+        top:0;
+        // 溢位 隱藏卷軸
+        overflow: hidden;
+        z-index: 9999;
+        background-color: rgb(194, 194, 214);
+        
+        >#close{
+            // 寬度與高度
+            width: 40px;
+            height: 40px;
+            @include DNli;
+            // 定位點 絕對定位
+            position:absolute;
+            // 位移 靠右 要設定 上和右與頁面間距
+            top: 10px;
+            right: 10px;
+            background-color: sandybrown;
+        }
+        >h1{
+            // 寬度
+            width: $W1P * 10;
+            // 高度
+            height: 110px;
+            text-align: center;
+            line-height: 100px;
+            background-color:rgb(212, 160, 247);
+        }
+        >ul {
+            width: $W1P * 9;
+            // 定位點 相對定位
+            position: relative;
+            // 移位 往下移動 (設定 top 數值)
+            top: 50%;
+
+            // 上邊界 外間距 35px
+            margin: {
+                top: -260px;
+            }
+            @include DNli;
+            // 彈性佈局
+            display: flex;
+            // 換行
+            flex-wrap: wrap;
+            background-color: slateblue;
+
+            >.item {
+                width: $W1P * 9 / 2;
+                height: 70px;
+                margin: {
+                    bottom: 15px;
+                }
+                background-color: thistle;
+            }
+            >.itemtwo {
+                width: $W1P * 9 / 3;
+                height: 90px;
+                margin: {
+                    top: 10px;
+                    bottom: 10px;
+                }
+                background-color: rgb(32, 156, 144);
+    
+            }
+        }
+
     }
 }
 footer{

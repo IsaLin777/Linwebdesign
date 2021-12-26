@@ -2,7 +2,7 @@ header{
     // 寬度100%；我要頁頭百分之百的寬度時，百分之百乘以10倍的意思)
     width: $w10*10;
     background-color: rgb(75, 245, 202);
-    nav{
+    >#MainNav{
         // 彈性佈局 flex；對齊物件的父框架
         // 顯示方式:彈性佈局
         display: flex;
