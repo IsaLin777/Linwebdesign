@@ -13,7 +13,7 @@
 // 目前使用的單位(數值)式百分比(%)；網頁的固定單位--像素px
 header{
     // 寬度100%；我要頁頭百分之百的寬度時，百分之百乘以10倍的意思)
-    width: $w10*10;
+    width: $W1P*10;
     // height: 80px;(解決方法一，最後選用解決方法二，故註記)
 
     // 設定高度 單位為%( 因為未給予基準值，所以無法計算出實際高度)
@@ -38,9 +38,15 @@ header{
         height:65px;(解決方法一，最後選用解決方法二，故註記)
         */
         // 解決方法二:清除浮動狀態，由nav設定
-        
+        height:60px;
         // 引入的程式執行結果為 Logo與MenuBtn的寬度，所以要寫在父框架(nav)
         @include LBW(8,5vw);
+        // 定位點 停佇
+        position: fixed;
+        // 靠上
+        top:0;
+        z-index: 999;
+        background-color: cornflowerblue;
 
         // 靠左排列(與MenuBtn同一行)
         #Logo{

@@ -120,11 +120,19 @@
             }
         }
         background-image: url(../../images/BG/001.jpg);
-        // 一行 兩欄
-        display: flex;
-        flex-wrap: wrap;
+        
 
         > article{
+
+            width: $W1P * 9.5;
+            // 一行 兩欄
+            display: flex;
+            flex-wrap: wrap;
+            // 行 (順序排列)
+            flex-direction: row;
+            // 主軸心 (水平) 靠左 -- 預設值，可以不給
+            // justify-content: flex-start;
+
             >.NCommodity{
                 // 寬度
                 // width: $w10 * 8;
@@ -346,6 +354,15 @@
         flex-wrap: wrap;
 
         > article{
+            width: $W1P * 9.5;
+            // 一行 兩欄
+            display: flex;
+            flex-wrap: wrap;
+            // 行 (順序排列)
+            flex-direction: row;
+            // 主軸心 (水平) 靠左 -- 預設值，可以不給
+            // justify-content: flex-start;
+            
             >.BCommdity{
                 // 寬度
                 width: $w10 * 4.5;

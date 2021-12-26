@@ -120,17 +120,23 @@
 
 
         > article{
-            width: $W1P * 9;
-            // 一行 兩欄
-            display: flex;
-            flex-wrap: wrap;
+            width: $W1P * 9.5;
+            // 導讀 03small 02檔
+
             >.NCommodity{
+                // 寬度變數
+                $NComW: $W1P * 10 / 3 - 3%;
                 // 寬度
+                width:$NComW;
                 // width: $w10 * 8;
-                width: $W1P *10 / 3 - 1%;
+                // width: $W1P *10 / 3 - 1%;
                 // 外間距
                 margin: {
                     bottom: 20px;
+                    // ((總寬度 100)-(物件的寬度 30.3333 * 物件數 3 = 91)) = 9 (剩下的寬度)
+                    // 剩下的寬度/左右邊各自的總數
+                    left: ((($W1P* 10) - ($NComW * 3)) / 2) / 3;
+                    right: ((($W1P* 10) - ($NComW * 3)) / 2) / 3;
                 }
                 // 背景顏色
                 background-color: white;
@@ -342,19 +348,28 @@
  
 
         > article{
-            width: $W1P * 9;
+            width: $W1P * 9.5;
+            // 導讀 03small 02檔
             // 一行 三欄
-            display: flex;
-            flex-wrap: wrap;
+            // display: flex;
+            // flex-wrap: wrap;
 
             >.BCommdity{
+                // 寬度變數
+                $NComW: $W1P * 10 / 3 - 3%;
                 // 寬度
+                width:$NComW;
                 // width: $w10 * 8;
-                width: $W1P *10 / 3 - 1%;
+                // width: $W1P *10 / 3 - 1%;
                 // 外間距
                 margin: {
                     bottom: 20px;
+                    // ((總寬度 100)-(物件的寬度 30.3333 * 物件數 3 = 91)) = 9 (剩下的寬度)
+                    // 剩下的寬度/左右邊各自的總數
+                    left: ((($W1P* 10) - ($NComW * 3)) / 2) / 3;
+                    right: ((($W1P* 10) - ($NComW * 3)) / 2) / 3;
                 }
+
                 // 背景顏色
                 background-color: white;
                 // 陰影 X軸 Y軸 模糊 顏色
