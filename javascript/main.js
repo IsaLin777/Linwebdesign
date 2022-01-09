@@ -129,7 +129,7 @@ function whileCode () {
         console.log ("亂數為:" + attack);
 
         // 將計算過後的值，再指定給Number
-        Number = Number- attack;
+        Number = Number - attack;
 
         console.log ("計算結果:" + Number);
     }
