@@ -93,6 +93,7 @@ header{
     }
     > #MenuNav{
         
+        @include DN;
         // 寬度與高度 (裝置的可視高度)
         width: $W1P * 10;
         height: $W1P * 10;
@@ -190,12 +191,16 @@ footer{
         }
     }
     // 版權宣告置中
-    p{
+    div {
         text-align:center;
         // 版權宣告與4個選項清單間隔拉開
-        margin-top: 0.7rem;
+        // margin-top: 0.7rem;
         // 版權宣告與頁面最底部間隔拉開
-        margin-bottom: 1rem;
+        // margin-bottom: 1rem;
+        padding-bottom: 1rem;
+        font-size: $Trem * 0.75;
+        letter-spacing: 1px;
+        
     }
     address{
         // 呼叫 混合函式
