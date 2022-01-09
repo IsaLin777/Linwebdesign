@@ -119,9 +119,13 @@ function whileCode () {
     
     // 亂數 (系統產生介於0~1之間)，將小數變為整數(數值要介於0~含30，需乘以31)，設定為無條件捨去法
     let attack;
+    let count = 1;
 
     while (Number > 0){
-        attack = Math.floor (Math.random() *30 );
+        console.log ("第" + count + "次");
+        count = count + 1;
+
+        attack = Math.floor (Math.random() *31 );
         console.log ("亂數為:" + attack);
 
         // 將計算過後的值，再指定給Number
