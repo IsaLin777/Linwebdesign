@@ -28,57 +28,6 @@
     <!-- html5響應式網頁架構id(唯一#) class(類別.) 語意式標籤語-->
     <!-- 頁首header(每頁固定) 主內容main(隨著頁面主題而不同，IE瀏覽器不支援) 頁尾footer(每頁固定) 文章(article，IE支援取代main標籤) -->
     <header>
-         <!-- 導覽列(主按鈕:首頁 商標圖 全系列商品 穿搭日誌 關於品牌 Q&A 聯絡我們，小圖示 FB IG Line 小購物車圖示 會員登入圖示 搜尋列) -->
-         <nav id="MainNav">
-            <!-- 導覽列標籤 nav 項目清單(ul li) 項目(ul) 清單(li)；商標 標題1(h1) -->
-            
-                <h1 id="Logo">D STATE Urban Outdoor</h1>
-                <!-- Icon 區塊標籤 div id:icon -->
-                <div id="Icon">
-                    <li class="Member">會員</li>
-                    <li class="ShoppingCart">購物車</li>
-                    <li class="Search">搜尋</li>
-                </div>
-                <ul class="BtnBox">
-                    <li class="AllCollection">All Collection 全系列商品
-                    </li>
-                    <li>Journal 穿搭日誌</li>
-                    <li>About 關於品牌</li>
-                    <li class="Q&A">Q&A 常見問題
-                        <li class="MemberService">會員條款</li>
-                        <li class="RefoundPolicy">退貨流程</li>
-                        <li class="Delivery">配送問題</li>
-                    </li>
-                    <li>Contact 聯絡我們</li>
-                </ul>
-                <div id="MenuBtn">
-                    <!-- 設定方法一:直接置入圖片img；alt替代文字(圖片連結失效時)；title提示文字(滑鼠移過去時有小文字在旁，不重要圖片，可以不用設定)；
-                        圖片很難設定為 水平置中；解決方式:利用文字取代圖片，設定背景圖呈現 -->
-                    <!-- <img src="images/icon/menu.svg" alt="D STATE 山系服飾品牌選單" title="服飾系列選單"> -->
-                12345
-                </div>
-                <!-- 清除浮動框架p(段落) -->
-                <div class="clear"></div>
-        </nav>
-
-        <!-- 行動裝置 選單 -->
-        <nav id="MenuNav">
-            <li id= "close">Close</li>
-            <h1>D STATE</h1>
-            <ul>
-                <li class="NewArrivals item">新品上架</li>
-                <li class="Bestseller item">熱銷推薦</li>
-                <li class="itemtwo MensWear">男裝系列</li>
-                <li class="itemtwo WomensWear">女裝系列</li>
-                <li class="itemtwo Unisex">中性風格</li>
-                <li class="itemtwo SS">春夏商品</li>
-                <li class="itemtwo FW">秋冬商品</li>
-                <li class="itemtwo Bags">背包配件</li>
-                <li class="itemtwo Journal">穿搭日誌</li>
-                <li class="itemtwo About">關於品牌</li>
-                <li class="itemtwo Q&A">常見問題</li>
-            </ul>
-        </nav>
        
     </header>
    
@@ -460,7 +409,7 @@
         <hr>
 
         <!-- 手機板呈現 -->
-        <nav class="SmallNavOnly" id = "SmallNavOnly">
+        <nav class="SmallNav" id = "SmallNav">
             <!-- <ul>
                 <li class="About">品牌故事</li>
                 <li class="VerticalLine">|</li>
@@ -490,7 +439,9 @@
     </footer>
 
     <!-- 外連檔案 -->
-    <script src= "javascript/main.js?20220109001"></script>
-    <script src= "javascript/TestCode.js"></script>
+    <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src= "javascript//jquery-3.6.0.js"></script>
+    <script src= "javascript/main.js?2022010900"></script>
+    
 </body>
 </html>
