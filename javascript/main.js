@@ -88,7 +88,12 @@ function SmallNavCon(){
 function MenuNav(){
     let MenuNav = document.getElementById('MenuNav');
     // 隱藏手機板選單
-    MenuNav.style.display = "none";
+    // MenuNav.style.display = "none";
+
+    // 顯示 手機版選單內容
+    for (let i= 0; i< MenuBtn.length; i++){
+        MenuBtn[i].style.display = "";
+    }
 }
 
 
