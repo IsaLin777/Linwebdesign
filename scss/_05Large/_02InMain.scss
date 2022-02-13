@@ -41,7 +41,7 @@
             background-color: rgba(255,255,255,0.25);
         }
         #ImgBox{
-            $ImgPadding: 335px;
+            $ImgPadding: 550px;
             // 父框架的padding 335px-子框架的padding 250px= 相差值 $Differ
             $Differ: 85px;
 
@@ -71,7 +71,8 @@
                 // 內間距 設定 下方間距，當成圖片的高度，單位 % 或者 vh (會隨著裝置而改變) 800px * 0.26= 208px, 固定值 px
                 // padding-bottom: 250px;
                 // 子框架的padding=父框架的padding-相差值$Differ
-                padding-bottom: $ImgPadding - $Differ; 
+                // 修正高度
+                padding-bottom: $ImgPadding; 
             }
             .Item01{
                 
